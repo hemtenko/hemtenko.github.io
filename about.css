@@ -1,0 +1,184 @@
+/*
+*Adjust gap sizes
+*Adjust font
+*/
+
+body {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #F8F5DF;
+}
+
+/*Top row navigation*/
+.homepage {
+    max-width: 90px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F5DF;
+    padding: 1rem 3rem;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    gap: 1.5rem;
+    font-family: "Alte Haas Grotesk";
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+}
+
+.navigation ul li a:hover{
+    color:#F2CE16;
+    text-decoration: none;
+}
+
+/*Introduction section*/
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    background-color: #A589D1;
+    padding: 2rem;
+}
+
+.selfie {
+    max-width: 25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+.selfie img {
+    max-width: 25rem;
+    outline: 1rem solid #74664B;
+}
+
+.about {
+    justify-content: center;
+}
+
+.about-title {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.about-blurb {
+    font-size: 1.7rem;
+    font-family: "Alte Haas Grotesk";
+}
+
+.about-content {
+    max-width: 50rem;
+    font-size: 1.3rem;
+    font-family: "Alte Haas Grotesk";
+}
+
+/*Design section*/
+.designs-container {
+    max-width: 400rem;
+    padding-bottom: 2rem;
+}
+
+.design-quote {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Alte Haas Grotesk";
+}
+
+.posters {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.posters img {
+    max-width: 500px;
+    height: auto;
+    border: 20px solid #74664B;
+}
+
+/*Covers section*/
+.filmings {
+    text-align: center;
+}
+
+.filmings-title {
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-decoration: underline;
+    font-family: "Alte Haas Grotesk";
+}
+
+.covers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.covers a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-family: "Alte Haas Grotesk";
+    padding-top: 2rem;
+    padding-bottom: 1.8rem;
+}
+
+.covers a:hover .thumbnail{
+    outline: 0.5rem solid #F2CE16;
+}
+
+.covers a:hover {
+    color: #EC7C26;
+}
+
+.thumbnail {
+    max-width: 14em;
+}
+
+/*Footer*/
+footer {
+    background-color: #61BF5E;
+    text-align: center;
+    padding: 1.3rem 1rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.email img {
+    width: 4rem;
+    height: auto;
+}
+
+.linkedin img {
+    width: 4rem;
+    height: auto;
+}
+
+.footer-message {
+    font-size: 3rem;
+    font-family: "Alte Haas Grotesk";
+}

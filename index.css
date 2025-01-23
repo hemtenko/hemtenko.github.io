@@ -1,0 +1,130 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #F8F5DF;
+}
+.homepage {
+    max-width: 90px;
+}
+
+/*Top Row Navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F5DF;
+    padding: 1rem 3rem;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    gap: 1.5rem;
+    font-family: "Alte Haas Grotesk";
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+}
+
+.navigation ul li a:hover{
+    color:#F2CE16;
+    text-decoration: none;
+}
+
+/* Top of page*/
+.header-container {
+    background-color: #F8F5DF;
+    padding: 4rem 9rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-name {
+    font-family: "VCR Osd Mono";
+    font-size: 4rem;
+}
+
+.header-blurb {
+    font-family: "Alte Haas Grotesk";
+    font-size: 2rem;
+}
+
+.header-button {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color:#418EF2;
+    color:white;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    font-family: "Alte Haas Grotesk";
+    font-size: 1.7rem;
+}
+
+.header-button:hover {
+    background-color:#F2CE16;
+    text-decoration: none;
+}
+
+/*Projects Section*/
+.projects {
+    padding: 2rem;
+    background-color: #F8F5DF;
+}
+
+.project-title { 
+    font-family: "Alte Haas Grotesk";
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.project-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-title a:hover {
+    color:#F2CE16;
+}
+
+.project-type {
+    font-family: "Alte Haas Grotesk";
+    font-size: 1.7rem;
+    margin-top: 0;
+    color:#74664B;
+}
+
+footer {
+    background-color: #61BF5E;
+    text-align: center;
+    padding: 1.3rem 1rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.email img {
+    width: 4rem;
+    height: auto;
+}
+
+.linkedin img {
+    width: 4rem;
+    height: auto;
+}
+
+.footer-message {
+    font-size: 3rem;
+    font-family: "Alte Haas Grotesk";
+}
