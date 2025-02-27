@@ -1,8 +1,3 @@
-/*
-*Adjust gap sizes
-*Adjust font
-*/
-
 body {
     width: 100%;
     height: 100%;
@@ -48,9 +43,11 @@ nav {
 .about {
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     gap: 3rem;
     background-color: #A589D1;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 
 .selfie {
@@ -64,10 +61,6 @@ nav {
     outline: 1rem solid #74664B;
 }
 
-.about {
-    justify-content: center;
-}
-
 .about-title {
     font-size: 4rem;
     margin-bottom: 0;
@@ -79,7 +72,7 @@ nav {
 }
 
 .about-content {
-    max-width: 50rem;
+    max-width: 65rem;
     font-size: 1.3rem;
     font-family: "Alte Haas Grotesk";
 }
@@ -103,6 +96,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .posters img {
@@ -118,7 +112,6 @@ nav {
 
 .filmings-title {
     font-size: 3rem;
-    margin-bottom: 0;
     text-decoration: underline;
     font-family: "Alte Haas Grotesk";
 }
@@ -128,6 +121,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .covers a {
@@ -137,8 +131,7 @@ nav {
     color: black;
     font-size: 2rem;
     font-family: "Alte Haas Grotesk";
-    padding-top: 2rem;
-    padding-bottom: 1.8rem;
+    padding-bottom: 0.8rem;
 }
 
 .covers a:hover .thumbnail{
@@ -150,7 +143,7 @@ nav {
 }
 
 .thumbnail {
-    max-width: 14em;
+    max-width: 30rem;
 }
 
 /*Footer*/
@@ -181,4 +174,48 @@ footer {
 .footer-message {
     font-size: 3rem;
     font-family: "Alte Haas Grotesk";
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+    /* Stack logo and nav items on smaller screens */
+    nav {
+        flex-direction: row; /* Keep the logo on the left */
+        justify-content: space-between;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* Reduce logo size for mobile */
+    .homepage {
+        max-width: 60px; /* Adjust logo size */
+        margin-bottom: 1rem; /* Add margin for spacing */
+    }
+
+    .navigation ul {
+        gap: 1rem; /* Add gap between items */
+        font-size: 1.3rem; /* Reduce font size on mobile */
+    }
+
+    .posters img {
+        max-width: 90%; /* Ensure posters fit the width of the container */
+        border-width: 1rem; /* Optional: Change the border size on mobile */
+    }
+
+    .selfie img {
+        max-width: 100%; /* Adjust selfie image size on mobile */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .covers {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items horizontally */
+        gap: 0.5rem; /* Add space between stacked items */
+    }
+
+    .covers a {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+        width: 90%;
+        max-width: 20rem;
+    }
 }
