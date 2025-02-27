@@ -100,6 +100,33 @@ nav {
     color:#74664B;
 }
 
+/*Design Section*/
+.designs-container {
+    max-width: 400rem;
+    padding-bottom: 2rem;
+}
+
+.design-quote {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Alte Haas Grotesk";
+}
+
+.posters {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.posters img {
+    max-width: 500px;
+    height: auto;
+    border: 20px solid #74664B;
+}
+
 footer {
     background-color: #61BF5E;
     text-align: center;
