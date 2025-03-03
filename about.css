@@ -61,6 +61,7 @@ nav {
     max-width: 100%;
     height: auto;
     outline: 1rem solid #74664B;
+    border-radius: 1px;
 }
 
 .about-desc {
@@ -92,6 +93,11 @@ nav {
 .filmings {
     padding: 2rem;
     text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .filmings-title {
@@ -100,10 +106,9 @@ nav {
 }
 
 .covers {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1800px;
 }
 
 .covers a {
@@ -114,13 +119,13 @@ nav {
     color: black;
     font-size: 1.5rem;
     font-family: "Alte Haas Grotesk";
-    padding-bottom: 0.8rem;
     transition: transform 0.2s, color 0.2s;
     gap: 0.5rem;
 }
 
 .thumbnail {
-    width: 350px;
+    width: 100%;
+    max-width: 500px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.2s, outline 0.2s;
@@ -167,7 +172,6 @@ footer {
     font-family: "Alte Haas Grotesk";
 }
 
-/* Mobile-specific styling */
 @media (max-width: 768px) {
     /* Stack logo and nav items on smaller screens */
     nav {
@@ -219,15 +223,23 @@ footer {
         font-size: 1.5rem;
     }
 
+    .filmings {
+        padding: 1rem;
+    }
+
     .covers {
-        flex-direction: column; /* Stack items vertically on mobile */
-        align-items: center; /* Center items horizontally */
-        gap: 0.5rem; /* Add space between stacked items */
+        padding: 0.5rem;
+    }
+
+    .covers .row {
+        margin-bottom: 0;
     }
 
     .covers a {
-        font-size: 1.5rem; /* Smaller font size for mobile */
-        width: 90%;
-        max-width: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    .cover-title {
+        font-size: 1.2rem;
     }
 }

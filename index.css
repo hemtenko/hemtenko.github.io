@@ -134,17 +134,20 @@ nav {
 
 .posters {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
 }
 
 .posters img {
     max-width: 500px;
     height: auto;
-    border: 20px solid #74664B;
+    outline: 18px solid #74664B;
+    border-radius: 10px;
 }
 
 footer {
@@ -228,8 +231,7 @@ footer {
         padding: 8px 16px;
     }
 
-    .posters img {
-        max-width: 100%; /* Ensure posters fit the width of the container */
-        border-width: 1rem; /* Optional: Change the border size on mobile */
+    .posters .poster-container {
+        border-width: 1rem;
     }
 }
