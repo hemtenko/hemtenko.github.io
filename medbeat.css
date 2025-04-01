@@ -1,0 +1,201 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #F8F5DF;
+}
+.homepage {
+    max-width: 90px;
+}
+
+/*Top Row Navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F5DF;
+    padding: 1rem 3rem;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    gap: 1.5rem;
+    font-family: "Alte Haas Grotesk";
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+}
+
+.navigation ul li a:hover{
+    color:#F2CE16;
+    text-decoration: none;
+}
+
+.content {
+    padding: 2rem;
+    font-family: "Alte Haas Grotesk";
+}
+
+.general {
+    background-color: #F2A469;
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 3rem;
+}
+
+.project-summary {
+    font-size: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.members {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.section-text {
+    font-size: 1.2rem;
+}
+
+.doc-link {
+    color:black;
+    font-size: 1.3rem;
+}
+
+.doc-link:hover{
+    color:#F2CE16
+}
+
+.images-container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+}
+
+.images-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.images-content img {
+    width: 40rem;
+    height: auto;
+    border: 1rem solid #74664B
+}
+
+.presentation-image {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.presentation-image img{
+    width: 45rem;
+    border: 1rem solid #74664B;
+}
+
+.figma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.preview img{
+    width: 45rem;
+    border: 1rem solid #74664B;
+}
+
+footer {
+    background-color: #61BF5E;
+    text-align: center;
+    padding: 1.3rem 1rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.email img {
+    width: 4rem;
+    height: auto;
+}
+
+.linkedin img {
+    width: 4rem;
+    height: auto;
+}
+
+.footer-message {
+    font-size: 3rem;
+    font-family: "Alte Haas Grotesk";
+}
+
+/* Media Queries for smaller screens (mobile) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Keep the logo on the left */
+        justify-content: space-between;
+        text-align: center;
+        padding: 1rem;
+    }
+
+     /* Reduce logo size for mobile */
+     .homepage {
+        max-width: 60px; /* Adjust logo size */
+        margin-bottom: 1rem; /* Add margin for spacing */
+    }
+
+    .navigation ul {
+        gap: 1rem; /* Add gap between items */
+        font-size: 1.3rem; /* Reduce font size on mobile */
+    }
+    
+  .presentation-image img {
+        width: 100%;  /* Make the images smaller on mobile */
+        height: auto;
+        border-width: 0.5rem;
+    }
+
+    .caption {
+        text-align: center;
+    }
+
+}
