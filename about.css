@@ -131,14 +131,9 @@ nav {
     transition: transform 0.2s, outline 0.2s;
 }
 
-.covers a:hover {
-    transform: scale(1.02);
-    color: #EC7C26;
-}
-
 .covers a:hover .thumbnail {
-    transform: scale(1.05);
-    outline: 0.5rem solid #F2CE16;
+    transform: scale(1.025);
+    outline: 0.4rem solid #F2CE16;
     outline-offset: 0;
 }
 
