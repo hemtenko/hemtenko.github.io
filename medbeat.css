@@ -4,7 +4,7 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    background-color: #FCF4D9;
+    background-color: #F8F5DF;
 }
 .homepage {
     max-width: 90px;
@@ -39,7 +39,7 @@ nav {
 }
 
 .content {
-    padding-left: 1.5rem;
+     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
     font-family: "Arial";
@@ -53,8 +53,7 @@ nav {
 }
 
 .general {
-    padding-top: 0.75rem;
-
+     padding-top: 0.75rem;
 }
 
 .project-title {
@@ -82,22 +81,13 @@ nav {
     font-size: 1.2rem;
 }
 
-.caption {
-    margin: 0;
-    font-size: 1.2rem;
+.doc-link {
+    color:black;
+    font-size: 1.3rem;
 }
 
-.research img{
-    width: 45rem;
-    height: auto;
-    border: 1rem solid #74664B;
-}
-
-.research-other {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+.doc-link:hover{
+    color:#F2CE16
 }
 
 .images-container {
@@ -106,19 +96,20 @@ nav {
     align-items: center;
     justify-content: center;
     padding:0;
-    flex-wrap: wrap;
 }
 
 .images-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     text-align: center;
 }
 
 .images-content img {
     width: 40rem;
-    height: 30rem;
+    height: auto;
     border: 1rem solid #74664B
 }
 
@@ -130,16 +121,42 @@ nav {
 
 .presentation-image img{
     width: 45rem;
-    outline: 1rem solid #74664B;
+    border: 1rem solid #74664B;
 }
 
-.doc-link {
-    color:black;
-    font-size: 1.3rem;
+.figma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.doc-link:hover{
-    color:#F2CE16
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.preview img{
+    width: 29rem;
+    border: 1rem solid #74664B;
+}
+
+.website-preview {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.website-preview img {
+    width: 45rem;
+    border: 1rem solid #74664B
 }
 
 footer {
@@ -191,8 +208,6 @@ footer {
         font-size: 1.3rem; /* Reduce font size on mobile */
     }
     
-  .research img,
-  .images-content img,
   .presentation-image img {
         width: 100%;  /* Make the images smaller on mobile */
         height: auto;

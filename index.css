@@ -4,7 +4,7 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    background-color: #F8F5DF;
+    background-color: #FBFAEE;
 }
 .homepage {
     max-width: 90px;
@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F8F5DF;
+    background-color: #FBFAEE;
     padding: 1rem 3rem;
 }
 
@@ -24,7 +24,7 @@ nav {
     display: flex;
     margin: 0;
     gap: 1.5rem;
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
 }
 
 .navigation ul li a {
@@ -33,9 +33,14 @@ nav {
     font-size: 1.5rem;
 }
 
-.navigation ul li a:hover{
-    color:#F2CE16;
-    text-decoration: none;
+.navigation ul li:nth-child(1) a:hover {
+    color:#5CBBFF;
+}
+.navigation ul li:nth-child(2) a:hover {
+    color:#8BD0A0;
+}
+.navigation ul li:nth-child(3) a:hover {
+    color:#C55E59;
 }
 
 /* Media Query for Small Screens */
@@ -63,7 +68,7 @@ nav {
 /* Top of page*/
 .header-container {
     justify-content: center;
-    background-color: #F8F5DF;
+    background-color: #FBFAEE;
     padding: 4rem 9rem;
     display: flex;
     align-items: center;
@@ -88,29 +93,38 @@ nav {
 }
 
 .header-name {
-    font-family: "VCR Osd Mono";
-    font-size: 4rem;
+    font-family: "Aesthetic Moment";
+    font-size: 5rem;
+    margin: 0;
 }
 
 .header-blurb {
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
     font-size: 2rem;
 }
 
 .header-button {
     display: inline-block;
     padding: 10px 10px;
-    background-color:#418EF2;
+    background-color:#8BD0A0;
     color:white;
     text-decoration: none;
     border-radius: 1.5rem;
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
     font-size: 1.7rem;
 }
 
 .header-button:hover {
-    background-color:#F2CE16;
+    background-color:#5CBBFF;
     text-decoration: none;
+}
+
+.section-title {
+    font-family: "Heavitas";
+    font-size: 3.5rem;
+    color: black;
+    text-align: center;
+    width: 100%;
 }
 
 /*Projects Section*/
@@ -119,7 +133,7 @@ nav {
 }
 
 .project-title { 
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
     margin: 0;
     font-size: 2.5rem;
 }
@@ -130,18 +144,51 @@ nav {
 }
 
 .project-title a:hover {
-    color:#F2CE16;
+    color:#5CBBFF;
 }
 
 .project-type {
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
     font-size: 1.7rem;
     margin-top: 0;
-    color:#74664B;
+    color:#C55E59;
+}
+
+/*Design Section*/
+.designs-container {
+    max-width: 400rem;
+    padding: 0 2rem 2rem 2rem;
+    margin-top: 0;
+}
+
+.design-quote {
+    margin: 0;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Arial";
+}
+
+.posters {
+    display: flex;
+    gap: 4rem;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.posters img {
+    max-width: 500px;
+    height: auto;
+    outline: 18px solid #74664B;
+    border-radius: 10px;
 }
 
 footer {
-    background-color: #61BF5E;
+    background-color: #8BD0A0;
     text-align: center;
     padding: 1.3rem 1rem;
 }

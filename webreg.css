@@ -4,7 +4,7 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    background-color: #F8F5DF;
+    background-color: #FBFAEE;
 }
 .homepage {
     max-width: 90px;
@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F8F5DF;
+    background-color: #FBFAEE;
     padding: 1rem 3rem;
 }
 
@@ -24,7 +24,7 @@ nav {
     display: flex;
     margin: 0;
     gap: 1.5rem;
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
 }
 
 .navigation ul li a {
@@ -39,17 +39,73 @@ nav {
 }
 
 .content {
-    padding: 2rem;
-    font-family: "Alte Haas Grotesk";
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-family: "Arial";
+}
+
+.title {
+    background-color: #85CCFF;
+    margin-left: 32rem;
+    margin-right: 32rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    border-radius: 2rem;
+    border: 0.15rem solid black;
 }
 
 .general {
-    background-color: #F2A469;
-    padding: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 0.75rem;
+}
+
+.brainstorming{
+    border: 0.15rem solid black;
+    border-radius: 1rem;
+    background-color: #FCF4D9;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.interview {
+    border: 0.15rem solid black;
+    border-radius: 1rem;
+    background-color: #FCF4D9;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+.analysis {
+    border: 0.15rem solid black;
+    border-radius: 1rem;
+    background-color: #FCF4D9;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+.prototype {
+    border: 0.15rem solid black;
+    border-radius: 1rem;
+    background-color: #FCF4D9;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+.final {
+    border: 0.15rem solid black;
+    border-radius: 1rem;
+    background-color: #FCF4D9;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 1rem;
 }
 
 .project-title {
+    text-align: center;
     font-size: 3rem;
 }
 
@@ -57,10 +113,11 @@ nav {
     font-size: 1.5rem;
 }
 
-.title {
+.section-title {
     font-size: 2rem;
     margin: 0;
     padding-top: 1rem;
+    color: #4B1D1B;
 }
 
 .members {
@@ -69,7 +126,7 @@ nav {
 }
 
 .section-text {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
 }
 
 .doc-link {
@@ -86,10 +143,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0.75rem;
 }
 
 footer {
-    background-color: #61BF5E;
+    background-color: #8BD0A0;
     text-align: center;
     padding: 1.3rem 1rem;
 }
@@ -114,7 +172,7 @@ footer {
 
 .footer-message {
     font-size: 3rem;
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
 }
 
 /* Media Query for Small Screens */
