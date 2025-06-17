@@ -46,62 +46,15 @@ nav {
 }
 
 .title {
-    background-color: #85CCFF;
     margin-left: 32rem;
     margin-right: 32rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 0.5rem;
-    border-radius: 2rem;
-    border: 0.15rem solid black;
 }
 
 .general {
     padding-top: 0.75rem;
-}
-
-.brainstorming{
-    border: 0.15rem solid black;
-    border-radius: 1rem;
-    background-color: #FCF4D9;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
-.interview {
-    border: 0.15rem solid black;
-    border-radius: 1rem;
-    background-color: #FCF4D9;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-top: 1rem;
-}
-
-.analysis {
-    border: 0.15rem solid black;
-    border-radius: 1rem;
-    background-color: #FCF4D9;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-top: 1rem;
-}
-
-.prototype {
-    border: 0.15rem solid black;
-    border-radius: 1rem;
-    background-color: #FCF4D9;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-top: 1rem;
-}
-
-.final {
-    border: 0.15rem solid black;
-    border-radius: 1rem;
-    background-color: #FCF4D9;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-top: 1rem;
 }
 
 .project-title {
