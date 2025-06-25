@@ -37,9 +37,12 @@ nav {
     color:#5CBBFF;
 }
 .navigation ul li:nth-child(2) a:hover {
-    color:#8BD0A0;
+    color:#8BD0A0;    
 }
 .navigation ul li:nth-child(3) a:hover {
+    color: #A25FBF;
+}
+.navigation ul li:nth-child(4) a:hover {
     color:#C55E59;
 }
 
