@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    background-color: #F8F5DF;
+    background-color: #FBFAEE;
 }
 
 /*Top row navigation*/
@@ -16,7 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F8F5DF;
+    background-color: #FBFAEE;
     padding: 1rem 3rem;
 }
 
@@ -25,7 +25,7 @@ nav {
     display: flex;
     margin: 0;
     gap: 1.5rem;
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
 }
 
 .navigation ul li a {
@@ -72,19 +72,19 @@ nav {
 }
 
 .about-title {
-    font-family: "VCR Osd Mono";
+    font-family: "Aesthetic Moment";
     font-size: 4rem;
     margin: 0;
 }
 
 .about-blurb {
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
     font-size: 2rem;
     margin: 0;
 }
 
 .about-content {
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
     font-size: 1.5rem;
     margin: 0;
 }
@@ -118,7 +118,7 @@ nav {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
     transition: transform 0.2s, color 0.2s;
     gap: 0.5rem;
 }
@@ -164,7 +164,7 @@ footer {
 
 .footer-message {
     font-size: 3rem;
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
 }
 
 @media (max-width: 768px) {
