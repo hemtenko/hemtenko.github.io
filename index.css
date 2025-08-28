@@ -40,9 +40,6 @@ nav {
     color:#8BD0A0;    
 }
 .navigation ul li:nth-child(3) a:hover {
-    color: #A25FBF;
-}
-.navigation ul li:nth-child(4) a:hover {
     color:#C55E59;
 }
 
@@ -50,27 +47,19 @@ nav {
 .header-container {
     justify-content: center;
     background-color: #FBFAEE;
-    padding: 4rem 9rem;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    padding-top: 4rem;
+    padding-bottom: 10.5rem;
+
 }
 
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column; /* Stack elements vertically */
-        text-align: center; /* Center the text */
-        padding: 2rem; /* Adjust padding for smaller screens */
-    }
-
-    .header-image img {
-        max-width: 80%; /* Adjust GIF size for mobile */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .header-info {
-        width: 100%; /* Ensure text takes full width */
-    }
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
 }
 
 .header-name {
@@ -108,36 +97,62 @@ nav {
     width: 100%;
 }
 
-/*Projects Section*/
-.projects {
+/*Project Section*/
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 95rem;
+    margin: 0 auto;
     padding: 2rem;
+}
+
+.project-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;  
+    text-decoration: none;
+}
+
+.project-card:hover h2 {
+    color:#5CBBFF;
+}
+
+.project-thumbnail img {
+    width: 17rem;
+    height: 12rem;
+    display: flex;
+    background-color: white;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black;
 }
 
 .project-title { 
     font-family: "Arial";
     margin: 0;
-    font-size: 2.5rem;
-}
-
-.project-title a {
-    text-decoration: none;
+    font-size: 2.25rem;
+    white-space: nowrap;
     color: black;
-}
-
-.project-title a:hover {
-    color:#5CBBFF;
 }
 
 .project-type {
     font-family: "Arial";
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-top: 0;
     color:#C55E59;
 }
 
+.project-desc {
+    font-size: 1.3rem;
+}
+
 /*Design Section*/
 .designs-container {
-    max-width: 400rem;
     padding: 0 2rem 2rem 2rem;
     margin-top: 0;
 }
@@ -168,6 +183,7 @@ nav {
     border-radius: 10px;
 }
 
+/*Footer*/
 footer {
     background-color: #8BD0A0;
     text-align: center;
@@ -184,15 +200,30 @@ footer {
 
 .email img {
     width: 4rem;
-    height: auto;
 }
 
 .linkedin img {
     width: 4rem;
-    height: auto;
 }
 
 .footer-message {
     font-size: 3rem;
     font-family: "Alte Haas Grotesk";
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; 
+        text-align: center; 
+        padding: 2rem; 
+    }
+
+    .header-image img {
+        max-width: 80%; 
+        height: auto; 
+    }
+
+    .header-info {
+        width: 100%; 
+    }
 }
