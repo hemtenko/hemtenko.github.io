@@ -47,26 +47,23 @@ nav {
 /*Introduction section*/
 .about {
     display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: flex-start;
+    gap: 0rem;
     background-color: #A589D1;
     padding: 2rem;
-    flex-wrap: wrap;
 }
 
 .selfie {
-    flex: 1;
+    flex: 0.05 0 auto;
     display: flex;
-    justify-content: flex-end;
-    max-width: 25rem;
 }
 
 .selfie img {
-    max-width: 100%;
+    max-width: 40rem;
     height: auto;
-    outline: 1rem solid #74664B;
+    width: 100%;
     border-radius: 1px;
+    object-fit: cover;
 }
 
 .about-desc {
