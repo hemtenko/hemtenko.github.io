@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Aesthetic Moment";
+    src: url("./fonts/Aesthetic Moment Italic Personal Used.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -5,6 +12,7 @@ body {
     margin: 0;
     line-height: 1.5;
     background-color: #FBFAEE;
+    font-family: Arial;
 }
 .homepage {
     max-width: 90px;
@@ -24,7 +32,6 @@ nav {
     display: flex;
     margin: 0;
     gap: 1.5rem;
-    font-family: "Arial";
 }
 
 .navigation ul li a {
@@ -40,12 +47,10 @@ nav {
     color:#8BD0A0;  
 }
 .navigation ul li:nth-child(3) a:hover {
-    color: #A25FBF;
-}
-.navigation ul li:nth-child(4) a:hover {
     color:#C55E59;
 }
 
+/*Page content*/
 .content {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -53,64 +58,49 @@ nav {
     font-family: "Arial";
 }
 
+.top-page {
+    background-color: #A1D1B7;
+    padding: 1.5rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .back-button {
     text-decoration: none;
     color:black;
     font-size: 1.4rem;
+    align-self: flex-start;
 }
 
 .back-button:hover {
-    color: #8BD0A0;
+    color: white;
 }
 
-.playing {
-    border: 0.15rem solid black;
-    border-radius: 1rem;
-    background-color:#E4EBF1;
-    max-width: 60rem;
-    padding: 0.5rem;
-    margin: 0 auto;
-    box-shadow: 0rem 0.5rem .5rem rgba(0,0,0, 0.25);
-}
-
-.currently-playing {
-    text-align: center;
-    font-size: 1.25rem;
-}
-
-.members {
-    font-size: 1.3rem;
-    margin: 0 auto;
-    white-space: nowrap;
-}
-
-.controls {
+.header-section {
+    flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    padding: 1rem;
-}
-
-.control-icon {
-  background-color: #C9D6E1;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.general {
-    padding-top: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .project-title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4.5rem;
+}
+
+.members {
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.general {
+    padding-top: 1.5rem;
 }
 
 .project-summary {
@@ -137,82 +127,88 @@ nav {
     color:#5CBBFF;
 }
 
-.video_link {
+.video-link {
     color: black;
 }
 
-.video_link:hover {
-    color: white;
+.video-link:hover {
+    color: #5CBBFF;
 }
 
 .video {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 0.15rem;
-    border-bottom-right-radius: 0.15rem;
 }
 
-.windows {
-    border: 0.3rem solid black;
-    border-radius: .5rem;
-    width: fit-content;
-    max-width: min-content;
-    margin: 2rem auto;
-    box-shadow: 0.5rem 0.5rem .5rem rgba(0,0,0, 0.25);
-}
-
-.windows .video {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
-
-.windows video {
-    display: block;
+.video video {
+    width: 875px;
     height: auto;
 }
 
-.title-bar {
-    background-color: #5CBBFF;
-    color: black;
+.video-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 0.3rem 0.6rem;
-    font-weight: bold;
-    border-bottom: 2px solid black;
-    border-top-left-radius: .15rem;
-    border-top-right-radius: .15rem;
+    width: fit-content;
 }
 
-.title-bar .title-text {
+.video-text {
     font-size: 1.5rem;
+    font-family: Arial;
 }
 
-.window-buttons {
-    display: flex;
-    gap: 0.3rem;
-    font-size: 1.75rem;
-}
-
-.window-buttons .button {
-    width: 1.75rem;
-    height: 1.75rem;
-    text-align: center;
-    border: 1px solid black;
-    background-color: #C0C0C0;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.alt-link {
+    font-size: 1.25rem;
+    font-family: Arial;
 }
 
 .final {
     padding-bottom: 1.7rem;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 90%;
+    height: 95%;
+    border: .75rem solid gray;
+    border-top: 3rem solid gray;
+    border-radius: 0.25rem;
+}
+
+.popup-content iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.close {
+    position: absolute;
+    top: -3.75rem;
+    right: 0rem;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.close:hover {
+    color: white;
+}
+
+/*Footer section*/
 footer {
     background-color: #8BD0A0;
     text-align: center;
