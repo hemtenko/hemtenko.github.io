@@ -13,7 +13,10 @@ EMAIL: hamiltk@uci.edu
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/override.css">
+  <link rel="stylesheet" href="../../components/project.css">
   <link rel="stylesheet" href="webreg.css">
+  <link rel="stylesheet" href="../../components/popup/popup.css">
+  <script src="../../components/popup/popup.js" defer></script>
   <title>Hamilton Ko - Portfolio</title>
 </head>
 <body>
@@ -107,13 +110,6 @@ EMAIL: hamiltk@uci.edu
       </div>
     </section>
   </div>
-    
-  <div id="window" class="popup">
-    <div class="popup-content">
-      <span class="close">&times;</span>
-      <iframe id="frame" src="" frameborder="0"></iframe>
-    </div>
-  </div>
 
 <!--Contact Section-->
 <footer>
@@ -128,31 +124,8 @@ EMAIL: hamiltk@uci.edu
 </div>
   </footer>
 
-<!--Javascript-->
-<script>
-  const modal = document.getElementById("window");
-  const frame = document.getElementById("frame");
-  const close = document.querySelector(".close");
+<!--Popup-->
+<div id="popup-container"></div>
 
-  document.querySelectorAll("a.doc-link").forEach(link => {
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
-      frame.src = this.href;
-      modal.style.display = "flex";
-    });
-  });
-
-  close.onclick = function() {
-    modal.style.display = "none";
-    frame.src = "";
-  }
-
-  window.onclick = function(e) {
-    if (e.target === modal) {
-      modal.style.display = "none";
-      frame.src = "";
-    }
-  };
-</script>
 </body>
 </html>
