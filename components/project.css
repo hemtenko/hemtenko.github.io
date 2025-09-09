@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Aesthetic Moment";
+    src: url("./fonts/Aesthetic Moment Italic Personal Used.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #FBFAEE;
+    font-family: Arial;
+}
+.homepage {
+    max-width: 90px;
+}
+
+/*Top Row Navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBFAEE;
+    padding: 1rem 3rem;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    gap: 1.5rem;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+}
+
+.navigation ul li:nth-child(1) a:hover {
+    color:#5CBBFF;
+}
+.navigation ul li:nth-child(2) a:hover {
+    color:#8BD0A0;  
+}
+.navigation ul li:nth-child(3) a:hover {
+    color:#C55E59;
+}
+
+/*Page content*/
+.content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-family: "Arial";
+}
+
+.top-page {
+    background-color: #A1D1B7;
+    padding: 1.5rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-button {
+    text-decoration: none;
+    color:black;
+    font-size: 1.4rem;
+    align-self: flex-start;
+}
+
+.back-button:hover {
+    color: white;
+}
+
+.header-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 4.5rem;
+    margin: 0;
+}
+
+.members {
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.general {
+    padding-top: 1.5rem;
+}
+
+.project-summary {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 1rem;
+    color: #4B1D1B;
+}
+
+.section-text {
+    font-size: 1.35rem;
+    margin-top: 0.25rem;
+}
+
+.doc-link {
+    color:black;
+    font-size: 1.3rem;
+}
+
+.doc-link:hover{
+    color:#5CBBFF;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.video video {
+    width: 875px;
+    height: auto;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.video-text {
+    font-size: 1.5rem;
+}
+
+.alt-link {
+    font-size: 1.25rem;
+}
+
+/*Footer section*/
+footer {
+    background-color: #8BD0A0;
+    text-align: center;
+    padding: 1.3rem 1rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.email img {
+    width: 4rem;
+    height: auto;
+}
+
+.linkedin img {
+    width: 4rem;
+    height: auto;
+}
+
+.footer-message {
+    font-size: 3rem;
+    font-family: "Arial";
+}
