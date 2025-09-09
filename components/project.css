@@ -135,6 +135,7 @@ nav {
 .video video {
     width: 875px;
     height: auto;
+    outline: 0.15rem solid black;
 }
 
 .video-content {
