@@ -5,6 +5,7 @@ body {
     margin: 0;
     line-height: 1.5;
     background-color: #FBFAEE;
+    font-family: Arial;
 }
 .homepage {
     max-width: 90px;
@@ -24,7 +25,6 @@ nav {
     display: flex;
     margin: 0;
     gap: 1.5rem;
-    font-family: "Arial";
 }
 
 .navigation ul li a {
@@ -69,7 +69,6 @@ nav {
 }
 
 .header-blurb {
-    font-family: "Arial";
     font-size: 2rem;
 }
 
@@ -80,7 +79,6 @@ nav {
     color:white;
     text-decoration: none;
     border-radius: 1.5rem;
-    font-family: "Arial";
     font-size: 1.7rem;
 }
 
@@ -119,10 +117,11 @@ nav {
 }
 
 .project-thumbnail img {
-    width: 17rem;
-    height: 12rem;
+    width: 19rem;
+    height: 13rem;
     display: flex;
     background-color: white;
+    outline: 0.25rem solid gray;
 }
 
 .project-info {
@@ -133,7 +132,6 @@ nav {
 }
 
 .project-title { 
-    font-family: "Arial";
     margin: 0;
     font-size: 2.25rem;
     white-space: nowrap;
@@ -141,7 +139,6 @@ nav {
 }
 
 .project-type {
-    font-family: "Arial";
     font-size: 1.5rem;
     margin-top: 0;
     color:#C55E59;
@@ -162,7 +159,6 @@ nav {
     padding: 1rem 2rem;
     text-align: center;
     font-size: 2.5rem;
-    font-family: "Arial";
 }
 
 .posters {
@@ -208,7 +204,7 @@ footer {
 
 .footer-message {
     font-size: 3rem;
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
 }
 
 @media (max-width: 768px) {
