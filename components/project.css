@@ -174,11 +174,13 @@ nav {
     width: fit-content;
 }
 
-.video-link {
+.video-link,
+.link {
     color: black;
 }
 
-.video-link:hover {
+.video-link:hover,
+.link:hover {
     color: #5CBBFF;
 }
 
