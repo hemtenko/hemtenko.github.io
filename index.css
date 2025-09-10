@@ -4,7 +4,8 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    background-color: #F8F5DF;
+    background-color: #FBFAEE;
+    font-family: Arial;
 }
 .homepage {
     max-width: 90px;
@@ -15,7 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F8F5DF;
+    background-color: #FBFAEE;
     padding: 1rem 3rem;
 }
 
@@ -24,7 +25,6 @@ nav {
     display: flex;
     margin: 0;
     gap: 1.5rem;
-    font-family: "Alte Haas Grotesk";
 }
 
 .navigation ul li a {
@@ -33,93 +33,123 @@ nav {
     font-size: 1.5rem;
 }
 
-.navigation ul li a:hover{
-    color:#F2CE16;
-    text-decoration: none;
+.navigation ul li:nth-child(1) a:hover {
+    color:#5CBBFF;
+}
+.navigation ul li:nth-child(2) a:hover {
+    color:#8BD0A0;    
+}
+.navigation ul li:nth-child(3) a:hover {
+    color:#C55E59;
 }
 
 /* Top of page*/
 .header-container {
     justify-content: center;
-    background-color: #F8F5DF;
-    padding: 4rem 9rem;
+    background-color: #FBFAEE;
     display: flex;
     align-items: center;
+    flex-wrap: wrap; 
+    padding-top: 4rem;
+    padding-bottom: 10.5rem;
+
 }
 
 .header-info {
-    flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     align-items: flex-start;
-    gap: 1.5rem;
 }
 
 .header-name {
-    font-family: "VCR Osd Mono";
-    font-size: 4rem;
+    font-family: "Aesthetic Moment";
+    font-size: 5rem;
     margin: 0;
 }
 
 .header-blurb {
-    font-family: "Alte Haas Grotesk";
     font-size: 2rem;
 }
 
 .header-button {
     display: inline-block;
     padding: 10px 10px;
-    background-color:#418EF2;
+    background-color:#8BD0A0;
     color:white;
     text-decoration: none;
     border-radius: 1.5rem;
-    font-family: "Alte Haas Grotesk";
     font-size: 1.7rem;
 }
 
 .header-button:hover {
-    background-color:#F2CE16;
+    background-color:#5CBBFF;
     text-decoration: none;
 }
 
 .section-title {
-    font-family: "VCR Osd Mono";
+    font-family: "Heavitas";
     font-size: 3.5rem;
     color: black;
     text-align: center;
     width: 100%;
 }
 
-/*Projects Section*/
-.projects {
+/*Project Section*/
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 95rem;
+    margin: 0 auto;
     padding: 2rem;
 }
 
-.project-title { 
-    font-family: "Alte Haas Grotesk";
-    margin: 0;
-    font-size: 2.5rem;
+.project-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;  
+    text-decoration: none;
 }
 
-.project-title a {
-    text-decoration: none;
+.project-card:hover h2 {
+    color:#5CBBFF;
+}
+
+.project-thumbnail img {
+    width: 19rem;
+    height: 13rem;
+    display: flex;
+    background-color: white;
+    outline: 0.25rem solid gray;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     color: black;
 }
 
-.project-title a:hover {
-    color:#F2CE16;
+.project-title { 
+    margin: 0;
+    font-size: 2.25rem;
+    white-space: nowrap;
+    color: black;
 }
 
 .project-type {
-    font-family: "Alte Haas Grotesk";
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-top: 0;
-    color:#74664B;
+    color:#C55E59;
+}
+
+.project-desc {
+    font-size: 1.3rem;
 }
 
 /*Design Section*/
 .designs-container {
-    max-width: 400rem;
     padding: 0 2rem 2rem 2rem;
     margin-top: 0;
 }
@@ -129,7 +159,6 @@ nav {
     padding: 1rem 2rem;
     text-align: center;
     font-size: 2.5rem;
-    font-family: "Alte Haas Grotesk";
 }
 
 .posters {
@@ -150,8 +179,9 @@ nav {
     border-radius: 10px;
 }
 
+/*Footer*/
 footer {
-    background-color: #61BF5E;
+    background-color: #8BD0A0;
     text-align: center;
     padding: 1.3rem 1rem;
 }
@@ -166,72 +196,30 @@ footer {
 
 .email img {
     width: 4rem;
-    height: auto;
 }
 
 .linkedin img {
     width: 4rem;
-    height: auto;
 }
 
 .footer-message {
     font-size: 3rem;
-    font-family: "Alte Haas Grotesk";
+    font-family: "Arial";
 }
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: row; /* Keep the logo on the left */
-        justify-content: space-between;
-        text-align: center;
-        padding: 1rem;
-    } 
-    
-    .homepage {
-        max-width: 50px;
-    }
-
-    .navigation ul {
-        gap: 0.8rem;
-    }
-
-    .navigation ul li a {
-        font-size: 1rem;
-    }  
-
     .header-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem;
+        flex-direction: column; 
+        text-align: center; 
+        padding: 2rem; 
     }
 
     .header-image img {
-        max-width: 80%;
-        height: auto;
+        max-width: 80%; 
+        height: auto; 
     }
 
     .header-info {
-        width: 100%;
-        align-items: center;
-    }
-
-    .header-name {
-        font-size: 3.5rem;
-        text-align: center;
-    }
-
-    .header-blurb {
-        text-align: center;
-        font-size: 1.6rem;
-        padding: 0 1rem;
-    }
-    
-    .header-button {
-        font-size: 1.2rem;
-        padding: 8px 16px;
-    }
-
-    .posters .poster-container {
-        border-width: 1rem;
+        width: 100%; 
     }
 }

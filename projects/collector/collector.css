@@ -1,0 +1,54 @@
+.images-content img {
+    width: 40rem;
+    height: 20rem;
+}
+
+.image img {
+    width: 35rem;
+    height: 28rem;
+}
+
+/* Media Queries for smaller screens (mobile) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Keep the logo on the left */
+        justify-content: space-between;
+        text-align: center;
+        padding: 1rem;
+    }
+
+     /* Reduce logo size for mobile */
+     .homepage {
+        max-width: 60px; /* Adjust logo size */
+        margin-bottom: 1rem; /* Add margin for spacing */
+    }
+
+    .navigation ul {
+        gap: 1rem; /* Add gap between items */
+        font-size: 1.3rem; /* Reduce font size on mobile */
+    }
+    
+    .requirements img,
+    .presentation-image img {
+        width: 100%;  /* Make the images smaller on mobile */
+        height: auto;
+        border-width: 0.5rem;
+    }
+
+    .caption {
+        text-align: center;
+    }
+
+    .final-report .images-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .final-report .images-content img {
+        width: 100%; /* Adjust width to fit mobile screen */
+        height: auto;
+        border-width: 0.5rem; /* Increase border width */
+        align-items: center;
+    }
+
+}
