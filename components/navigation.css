@@ -1,0 +1,31 @@
+/*Top Row Navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBFAEE;
+    padding: 1rem 3rem;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    gap: 1.5rem;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+}
+
+.navigation ul li:nth-child(1) a:hover {
+    color:#5CBBFF;
+}
+.navigation ul li:nth-child(2) a:hover {
+    color:#8BD0A0;  
+}
+.navigation ul li:nth-child(3) a:hover {
+    color:#C55E59;
+}
