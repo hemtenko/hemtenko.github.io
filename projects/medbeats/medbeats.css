@@ -1,3 +1,9 @@
+.images-content img,
+.image img {
+    width: 40rem;
+    height: auto;
+}
+
 /* Media Queries for smaller screens (mobile) */
 @media (max-width: 768px) {
     nav {
@@ -16,6 +22,16 @@
     .navigation ul {
         gap: 1rem; /* Add gap between items */
         font-size: 1.3rem; /* Reduce font size on mobile */
+    }
+    
+  .presentation-image img {
+        width: 100%;  /* Make the images smaller on mobile */
+        height: auto;
+        border-width: 0.5rem;
+    }
+
+    .caption {
+        text-align: center;
     }
 
 }
