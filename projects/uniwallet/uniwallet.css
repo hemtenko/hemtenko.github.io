@@ -1,42 +1,7 @@
-.research img{
-    width: 45rem;
-    height: auto;
-}
-
-.research-other {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.images-container {
-    display:flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    padding:0;
-    flex-wrap: wrap;
-}
-
-.images-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.images-content img {
+.images-content img,
+.image img {
     width: 40rem;
-    height: auto;
-}
-
-.presentation-image {
-    display: flex;
-    justify-content: center;
-}
-
-.presentation-image img{
-    width: 45rem;
-    height: auto;
+    height: 25rem;
 }
 
 /* Media Queries for smaller screens (mobile) */
@@ -59,9 +24,8 @@
         font-size: 1.3rem; /* Reduce font size on mobile */
     }
     
-  .research img,
-  .images-content img,
-  .presentation-image img {
+    .images-content img,
+    .presentation-image img {
         width: 100%;  /* Make the images smaller on mobile */
         height: auto;
         border-width: 0.5rem;
