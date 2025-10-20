@@ -71,61 +71,31 @@ body {
     font-family: "Heavitas";
     font-size: 3.5rem;
     color: black;
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 
-/*Project Section*/
-.project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 95rem;
-    margin: 0 auto;
+.work-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
     padding: 2rem;
 }
 
-.project-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1rem;  
+.work-cards a {
     text-decoration: none;
 }
 
-.project-card:hover h2 {
-    color:#5CBBFF;
-}
-
-.project-thumbnail img {
-    width: 19rem;
-    height: 13rem;
-    display: flex;
-    background-color: white;
-    outline: 0.25rem solid gray;
-}
-
-.project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: black;
-}
-
-.project-title { 
-    margin: 0;
-    font-size: 2.25rem;
-    white-space: nowrap;
-    color: black;
-}
-
-.project-type {
-    font-size: 1.5rem;
-    margin-top: 0;
-    color:#C55E59;
-}
-
-.project-desc {
-    font-size: 1.3rem;
+.case-studies, .gallery {
+    width: 35rem;
+    height: 40rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    border: black 0.15rem solid;
+    border-radius: 2rem;
+    background-color: rgb(227, 227, 227);
 }
 
 /*Design Section*/
