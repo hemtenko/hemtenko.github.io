@@ -24,14 +24,18 @@ nav {
 .navigation ul li, .navigation ul li a{
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.navigation ul li a:hover{
+    color: #5199FF;
 }
 
 .navigation ul li a > .dropdown {
     border-radius: 1rem;
 }
 
-.navigation ul li:nth-child(1) a:hover {
+/*.navigation ul li:nth-child(1) a:hover {
     color:#5CBBFF;
 }
 .navigation ul li:nth-child(2) a:hover {
@@ -39,7 +43,7 @@ nav {
 }
 .navigation ul li:nth-child(3) a:hover {
     color:#C55E59;
-}
+}*/
 
 /*Dropdown menu*/
 .dropdown > .dropdown-menu {
@@ -50,15 +54,17 @@ nav {
     display: block;
     background: white;
     white-space: nowrap;
+    padding: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 }
 
 .navigation ul li.dropdown > .dropdown-menu {
     border-radius: 1rem;
-    padding: 0.75rem;
     min-width: 100%;
     margin-left: -.25rem;
 }
 
 .navigation ul li.dropdown > .dropdown-menu li a{
-    font-size: 1.25rem;
+    font-size: 1.35rem;
 }
