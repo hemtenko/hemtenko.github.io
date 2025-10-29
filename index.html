@@ -13,27 +13,15 @@ EMAIL: hamiltk@uci.edu
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/override.css">
-  <link rel="stylesheet" href="components/navigation.css">
+  <link rel="stylesheet" href="components/navigation/navigation.css">
   <link rel="stylesheet" href="components/footer.css">
   <link rel="stylesheet" href="index.css">
   <title>Hamilton Ko - Portfolio</title>
 </head>
+
 <body>
-  <nav>
-    <a href="index.html"><img class="homepage" src="./images/home-icon.png" alt="Icon drawing"></a>
-    <div class="navigation">
-      <ul>
-        <li class="dropdown"><strong>work</strong>
-          <ul class="dropdown-menu">
-            <li><a href="projects.html">case studies</a></li>
-            <li><a href="gallery.html">gallery</a></li>
-          </ul>
-        </li>
-        <li><a href="about.html"><strong>about</strong></a></li>
-        <li><a href="Hamilton Ko - Resume.pdf" target="_blank"><strong>resume</strong></a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="nav"></div>
+  <script src="/components/navigation/nav-loader.js"></script>
 
   <header>
     <div class="header-container">
@@ -42,49 +30,51 @@ EMAIL: hamiltk@uci.edu
       </div>
       <div class="header-info">
         <div class="header-title">
-            <h1 class="header-name">Hamilton Ko</h1>
+          <h1 class="header-name">Hamilton Ko</h1>
         </div>
-        <div class="header-blurb">A <span style="color:#0B4899">graphic designer</span> specializing in creating interactive spaces through 
-          <span style="color:#0B4899">UI/UX design</span>
+        <div class="header-blurb">A <span style="color:#0B4899">graphic designer</span> specializing in creating interactive spaces through <span style="color:#0B4899">UI/UX design</span>
         </div>
         <div class="header-buttons">
-           <a href="#projects-section" class="header-button"><strong>Check out my projects</strong></a>
-        <a href="about.html" class="header-button"><strong>Learn more about me</strong></a>
+          <a href="#work-cards" class="header-button"><strong>Check out my projects</strong></a>
+          <a href="about.html" class="header-button"><strong>Learn more about me</strong></a>
         </div>
-      </div> 
+      </div>
     </div>
   </header>
 
-<section id="work-cards">
-  <div class="work-cards">
-    <a href="projects.html" class="card">
-    <div class="case-studies">
-      <div class="section-title">Case Studies</div>
+  <section id="work-cards">
+    <div class="work-cards">
+      <a href="projects.html" class="card">
+        <div class="case-studies">
+          <h2 class="card-title">Designing experiences that users will love</h2>
+          <h3 class="type">UI/UX Design</h3>
+          <p class="card-subtitle">View my work &#8594</p>
+        </div>
+      </a>
 
-    </div></a>
-
-    <div class="gallery">
-      <div class="section-title">Gallery</div>
+      <a href="designs.html" class="card">
+        <div class="gallery">
+          <h2 class="card-title">Gallery</h2>
+          <h3 class="type">Graphic Design</h3>
+          <p class="card-subtitle">View my designs &#8594</p>
+        </div>
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!--Design Section
-<section id="design-section">
- <div class="section-title">Designs</div>
-
-</section>-->
-<!--Contact Section-->
-<footer>
-  <div class="footer-message">let's stay connected!</div>
-  <div class="social-links">
+  <!--Contact Section-->
+  <footer>
+    <div class="footer-message">let's stay connected!</div>
+    <div class="social-links">
       <div class="email">
         <a href="mailto:thehamiltonko@gmail.com"><img src="./images/love-letter-emoji.png" alt="Letter emoji"></a>
       </div>
-    <div class="linkedin">
-      <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="./images/linkedin.png" alt="Linkedin logo"></a>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="./images/linkedin.png"
+            alt="Linkedin logo"></a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </body>
+
 </html>
