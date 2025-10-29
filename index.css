@@ -80,12 +80,18 @@ body {
 .work-cards a {
   text-decoration: none;
   border-radius: 2rem;
+  transition: 0.5s;
+}
+
+.work-cards a:hover {
+  transform: translateY(-1rem);
+  transition: 0.5s;
 }
 
 .case-studies,
 .gallery {
   width: 35rem;
-  height: 40rem;
+  height: 45rem;
   padding-left: 1rem;
   padding-top: 1rem;
   border: black 0.15rem solid;
