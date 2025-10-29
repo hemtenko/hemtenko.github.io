@@ -14,129 +14,135 @@ EMAIL: hamiltk@uci.edu
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/override.css">
   <link rel="stylesheet" href="../../components/project.css">
-  <link rel="stylesheet" href="../../components/navigation.css">
   <link rel="stylesheet" href="../../components/footer.css">
   <link rel="stylesheet" href="uniwallet.css">
   <link rel="stylesheet" href="../../components/popup/popup.css">
   <script src="../../components/popup/popup.js" defer></script>
   <title>Hamilton Ko - Portfolio</title>
 </head>
+
 <body>
-
   <!--Navigation-->
-  <nav>
-    <div class="Homepage">
-      <a href="../../index.html"><img class="homepage" src="../../images/home-icon.png" alt="Icon drawing"></a>
-    </div>
-    <div class="navigation">
-      <ul>
-        <li><a href="../../index.html"><strong>Home</strong></a></li>
-        <li><a href="../../about.html"><strong>About</strong></a></li>
-        <li><a href="../../Hamilton Ko - Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="nav"></div>
+  <script src="/components/navigation/nav-loader.js"></script>
 
-  <!--Top of page-->
-  <div class="content">
   <header>
     <div class="top-page">
-      <a href="../../index.html#projects-section" class="back-button"> &#60 Back</a>
+      <a href="/projects.html" class="back-button"> &#60 Back</a>
       <div class="header-section">
         <h1 class="project-title"><b>Uniwallet</b></h1>
-      <p class="members"><strong>Group Members</strong>: Jason Lee, Hamilton Ko, Andy Dien, Axel Dejesus Lopez, and Cecilia O'Grady</p>
+        <p class="members"><strong>Group Members</strong>: Jason Lee, Hamilton Ko, Andy Dien, Axel Dejesus Lopez, and
+          Cecilia O'Grady</p>
       </div>
-    </div>
-    <div class="general">
-      <h3 class="section-title"><b>Overview</b></h3>
-    <p class="project-summary">Our team, Design Dazzlers, developed a budgeting mobile application to help students keep track of 
-        their spendings and maintain their budget with the use of AI, creating an easier and educative budgeting experience.</p>
     </div>
   </header>
 
+  <!--Top of page-->
+  <div class="content">
+    <div class="general">
+      <h3 class="section-title"><b>Overview</b></h3>
+      <p class="project-summary">Our team, Design Dazzlers, developed a budgeting mobile application to help students
+        keep track of
+        their spendings and maintain their budget with the use of AI, creating an easier and educative budgeting
+        experience.</p>
+    </div>
+
     <section id="research">
-        <div class="research-info">
-          <h3 class="section-title"><b>Research</b></h3>
-          <p class="section-text">Our team conducted a competitive analysis to access what features that other similar applications had to ensure that the most 
-            important features were included while also observing what can other features could be inlcuded to make our application stand out from the competitors.
-            To view the competitive analysis, click <a href="assets/Uniwallet Competitive Analysis.pdf" class="doc-link">here</a>.</p>
-        </div>
-          <div class="image">
-            <img src="assets/comp-analysis.png" alt="Competitve analysis chart">
-            <span class="caption">Sample of other apps that were researched</span>
-          </div>
+      <div class="research-info">
+        <h3 class="section-title"><b>Research</b></h3>
+        <p class="section-text">Our team conducted a competitive analysis to access what features that other similar
+          applications had to ensure that the most
+          important features were included while also observing what can other features could be inlcuded to make our
+          application stand out from the competitors.
+          To view the competitive analysis, click <a href="assets/Uniwallet Competitive Analysis.pdf"
+            class="doc-link">here</a>.</p>
+      </div>
+      <div class="image">
+        <img src="assets/comp-analysis.png" alt="Competitve analysis chart">
+        <span class="caption">Sample of other apps that were researched</span>
+      </div>
     </section>
 
     <section id="surveying">
-        <h3 class="section-title"><b>Surveying</b></h3>
-        <p class="section-text">An online survey was created and distributed to our target population, college students that receive financial aid, to obtain information that would help determine 
-            what concerns were present and needed to be addressed. This helped up to determine what features were important for us to focus on and develop. This also allowed for our group to see
-            the general trends and options that emergred from our target population. Our analysis of the survey can be found 
-            <a href="assets/UniWallet Survey Findings.pdf" class="doc-link"> here</a>.
-        </p>
-        <div class="images-container">
-          <div class="images-content">
-            <img src="assets/requirements-survey.png" alt="Notes of requirements">
-            <span class="caption">Requirements of the application</span>
-          </div>
-          <div class="images-content">
-            <img src="assets/background-survey.png" alt="Background information">
-            <span class="caption">Background information about user's budgeting processes</span>
-          </div>
+      <h3 class="section-title"><b>Surveying</b></h3>
+      <p class="section-text">An online survey was created and distributed to our target population, college students
+        that receive financial aid, to obtain information that would help determine
+        what concerns were present and needed to be addressed. This helped up to determine what features were important
+        for us to focus on and develop. This also allowed for our group to see
+        the general trends and options that emergred from our target population. Our analysis of the survey can be found
+        <a href="assets/UniWallet Survey Findings.pdf" class="doc-link"> here</a>.
+      </p>
+      <div class="images-container">
+        <div class="images-content">
+          <img src="assets/requirements-survey.png" alt="Notes of requirements">
+          <span class="caption">Requirements of the application</span>
         </div>
+        <div class="images-content">
+          <img src="assets/background-survey.png" alt="Background information">
+          <span class="caption">Background information about user's budgeting processes</span>
+        </div>
+      </div>
     </section>
 
     <section id="mockups">
-        <h3 class="section-title"><b>Mockups</b></h3>        
-        <p class="section-text">After the analysis of the survey answers was done, our team began to create sketches, wireframes, and an overall mockup to visualize 
-            what the final application might look like as well as what the different sections or pages of the applications might have based on the features that we 
-            chose that would address the concerns that our target population has mentioned. Click 
-            <a href="https://embed.figma.com/design/dj2pIl2R0CAZ3FcjV4u9jk/UniWallet?node-id=0-1&embed-host=share" class="doc-link">here</a> 
-            to view the entire Figma file.
-        </p>
-        <div class="images-container">
-          <div class="images-content">
-            <img src="assets/mockup-1.png" alt="Sketch of potential interface">
-            <span class="caption">One sketch of the potential interface</span>
-          </div>
-          <div class="images-content">
-            <img src="assets/mockup-2.png" alt="Sketch of another potential interface">          
-            <span class="caption">Another sketch of the potential interface</span>
-          </div> 
+      <h3 class="section-title"><b>Mockups</b></h3>
+      <p class="section-text">After the analysis of the survey answers was done, our team began to create sketches,
+        wireframes, and an overall mockup to visualize
+        what the final application might look like as well as what the different sections or pages of the applications
+        might have based on the features that we
+        chose that would address the concerns that our target population has mentioned. Click
+        <a href="https://embed.figma.com/design/dj2pIl2R0CAZ3FcjV4u9jk/UniWallet?node-id=0-1&embed-host=share"
+          class="doc-link">here</a>
+        to view the entire Figma file.
+      </p>
+      <div class="images-container">
+        <div class="images-content">
+          <img src="assets/mockup-1.png" alt="Sketch of potential interface">
+          <span class="caption">One sketch of the potential interface</span>
         </div>
+        <div class="images-content">
+          <img src="assets/mockup-2.png" alt="Sketch of another potential interface">
+          <span class="caption">Another sketch of the potential interface</span>
+        </div>
+      </div>
     </section>
 
     <section id="presentation">
-        <h3 class="section-title"><b>Presentation</b></h3>
-          <p class="section-text">At the end, our group compiled all of our work and findings into a presentation to showcase what Uniwallet is along with the process of developing Uniwallet from start to finish.
-            The presentation slides can be found <a href="assets/Uniwallet Presentation.pdf" class="doc-link"> here</a>.
-          </p>
-          <div class="video">
-          <div class="video-content">
+      <h3 class="section-title"><b>Presentation</b></h3>
+      <p class="section-text">At the end, our group compiled all of our work and findings into a presentation to
+        showcase what Uniwallet is along with the process of developing Uniwallet from start to finish.
+        The presentation slides can be found <a href="assets/Uniwallet Presentation.pdf" class="doc-link"> here</a>.
+      </p>
+      <div class="video">
+        <div class="video-content">
           <video controls>
             <source src="assets/UniWallet presentation.mp4" type="video/mp4">
-          </video>            
-          <p class="alt-link">If video can't be played, <a href="https://drive.google.com/file/d/1xyoh3gq_jgsuPyKhvAnCEoKuGSj6FhL1/view?usp=sharing" class="video-link">click here to view the project demo</a>.</p>
-          </div>
+          </video>
+          <p class="alt-link">If video can't be played, <a
+              href="https://drive.google.com/file/d/1xyoh3gq_jgsuPyKhvAnCEoKuGSj6FhL1/view?usp=sharing"
+              class="video-link">click here to view the project demo</a>.</p>
         </div>
+      </div>
     </section>
   </div>
 
-    <!--Contact Section-->
-<footer>
-  <div class="footer-message">let's stay connected!</div>
-  <div class="social-links">
-    <div class="email">
-      <a href="mailto:thehamiltonko@gmail.com"><img src="../../images/love-letter-emoji.png" alt="Letter emoji"></a>
+  <!--Contact Section-->
+  <footer>
+    <div class="footer-message">let's stay connected!</div>
+    <div class="social-links">
+      <div class="email">
+        <a href="mailto:thehamiltonko@gmail.com"><img src="../../images/love-letter-emoji.png" alt="Letter emoji"></a>
+      </div>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="../../images/linkedin.png"
+            alt="Linkedin logo"></a>
+      </div>
     </div>
-  <div class="linkedin">
-    <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="../../images/linkedin.png" alt="Linkedin logo"></a>
-  </div>
-</div>
   </footer>
 
   <!--Popup-->
   <div id="popup-container"></div>
 
 </body>
+
 </html>

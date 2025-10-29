@@ -14,110 +14,118 @@ EMAIL: hamiltk@uci.edu
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/override.css">
   <link rel="stylesheet" href="../../components/project.css">
-  <link rel="stylesheet" href="../../components/navigation.css">
   <link rel="stylesheet" href="../../components/footer.css">
   <link rel="stylesheet" href="webreg.css">
   <link rel="stylesheet" href="../../components/popup/popup.css">
   <script src="../../components/popup/popup.js" defer></script>
   <title>Hamilton Ko - Portfolio</title>
 </head>
+
 <body>
-
   <!--Navigation-->
-  <nav>
-    <div class="Homepage">
-      <a href="../../index.html"><img class="homepage" src="../../images/home-icon.png" alt="Icon drawing"></a>
-    </div>
-    <div class="navigation">
-      <ul>
-        <li><a href="../../index.html"><strong>Home</strong></a></li>
-        <li><a href="../../about.html"><strong>About</strong></a></li>
-        <li><a href="../../Hamilton Ko - Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="nav"></div>
+  <script src="/components/navigation/nav-loader.js"></script>
 
-  <!--Top of page-->
-  <div class="content">
   <header>
     <div class="top-page">
-      <a href="../../index.html#projects-section" class="back-button" id="projects-back"> &#60 Back</a>
-    <div class="header-section">
-      <h1 class="project-title"><b>WebReg: Redesigned</b></h1>
-      <p class="members"><strong>Group Members</strong>: Giovanna Kim-Van Mancinelli, Hamilton Ko, Andy Dien, Eric Liu, and Ronica Cheng</p>
-    </div>
-    </div>
-    <div class="general">
-      <h3 class="section-title"><b>Overview</b></h3>
-      <p class="project-summary">Our group, Informagics, decided to redesign WebReg, a website used by college students to register for classes, to create a better user experience and make the website more accessible when 
-        searching and enrolling in classes.<br></p>
+      <a href="/projects.html" class="back-button" id="projects-back"> &#60 Back</a>
+      <div class="header-section">
+        <h1 class="project-title"><b>WebReg: Redesigned</b></h1>
+        <p class="members"><strong>Group Members</strong>: Giovanna Kim-Van Mancinelli, Hamilton Ko, Andy Dien, Eric
+          Liu, and Ronica Cheng</p>
+      </div>
     </div>
   </header>
 
+  <!--Top of page-->
+  <div class="content">
+    <div class="general">
+      <h3 class="section-title"><b>Overview</b></h3>
+      <p class="project-summary">Our group, Informagics, decided to redesign WebReg, a website used by college students
+        to register for classes, to create a better user experience and make the website more accessible when
+        searching and enrolling in classes.<br></p>
+    </div>
+
     <section id="brainstorming">
-        <h3 class="section-title"><b>Brainstorming</b></h3>
-        <p class="section-text">During this stage, the group collaborated to come up with the different websites that we wanted to consider with our redesign before we narrowed down to WebReg. 
-        Once we determined to focus on WebReg, we then started to consider some of the main issues that might appear and that we want to focus on. This led us to focus on the general experience of having 
-        to input a specific class code to enroll in a class and having to go through different tabs in order to either enroll or drop a class as well as viewing the classes that a student is already enrolled in.</p>
+      <h3 class="section-title"><b>Brainstorming</b></h3>
+      <p class="section-text">During this stage, the group collaborated to come up with the different websites that we
+        wanted to consider with our redesign before we narrowed down to WebReg.
+        Once we determined to focus on WebReg, we then started to consider some of the main issues that might appear and
+        that we want to focus on. This led us to focus on the general experience of having
+        to input a specific class code to enroll in a class and having to go through different tabs in order to either
+        enroll or drop a class as well as viewing the classes that a student is already enrolled in.</p>
     </section>
 
     <section id="interviewing">
-        <h3 class="section-title"><b>Interviewing</b></h3>        
-        <p class="section-text">Before we started to interview people in relation to WebReg, our group first came up with a list of questions that all participants would answer along with a protocol 
-        to ensure that each interview is being conducted the same way. Once we finalized a list of questions that we would ask our participants, we then gathered our participants and recorded their responses.
+      <h3 class="section-title"><b>Interviewing</b></h3>
+      <p class="section-text">Before we started to interview people in relation to WebReg, our group first came up with
+        a list of questions that all participants would answer along with a protocol
+        to ensure that each interview is being conducted the same way. Once we finalized a list of questions that we
+        would ask our participants, we then gathered our participants and recorded their responses.
         Our interview protocol can be viewed <a href="assets/interview-protocol.pdf" class="doc-link">here</a>.</p>
     </section>
 
     <section id="analysis">
-        <h3 class="section-title"><b>Expert Analysis</b></h3>        
-        <p class="section-text">After conducting our interviews, our group started to conduct additional research to learn more about the website and the features that were present and available to 
-            the user. Then, we determined which features still needed to be present in the redesign as well as what features needed to be redone. The report can be viewed 
-            <a href="assets/expert-analysis.pdf" class="doc-link">here</a>.
-        </p>
+      <h3 class="section-title"><b>Expert Analysis</b></h3>
+      <p class="section-text">After conducting our interviews, our group started to conduct additional research to learn
+        more about the website and the features that were present and available to
+        the user. Then, we determined which features still needed to be present in the redesign as well as what features
+        needed to be redone. The report can be viewed
+        <a href="assets/expert-analysis.pdf" class="doc-link">here</a>.
+      </p>
     </section>
 
     <section id="prototyping">
-        <h3 class="section-title"><b>Prototyping</b></h3>         
-        <p class="section-text">After conducting our research and going through the results of our interviews, our group used that information to start creating mockups and then an interactive
-            prototype for users to test out and gain more feedback on. The protocol we followed for our prototype along with our notes can be viewed 
-            <a href="assets/proto-protocol.pdf" class="doc-link">here</a>.
-        </p>
-        <div class="video">
-          <div class="video-content">
+      <h3 class="section-title"><b>Prototyping</b></h3>
+      <p class="section-text">After conducting our research and going through the results of our interviews, our group
+        used that information to start creating mockups and then an interactive
+        prototype for users to test out and gain more feedback on. The protocol we followed for our prototype along with
+        our notes can be viewed
+        <a href="assets/proto-protocol.pdf" class="doc-link">here</a>.
+      </p>
+      <div class="video">
+        <div class="video-content">
           <div class="video-text">Project Demo</div>
           <video controls>
             <source src="assets/P3-Demo.mp4" type="video/mp4">
-          </video>            
-          <p class="alt-link">If video can't be played, <a href="https://drive.google.com/file/d/1Iu1ukz4X0Oe3KZDwOCPbgiix_WiV1eNL/view?usp=sharing" class="video-link" target="_blank">click here to view the project demo</a>.</p>
-          </div>
+          </video>
+          <p class="alt-link">If video can't be played, <a
+              href="https://drive.google.com/file/d/1Iu1ukz4X0Oe3KZDwOCPbgiix_WiV1eNL/view?usp=sharing"
+              class="video-link" target="_blank">click here to view the project demo</a>.</p>
         </div>
+      </div>
     </section>
 
     <section id="final">
-        <h3 class="section-title"><b>Final Report</b></h3>        
-        <p class="section-text">At the end, our group compiled together the findings that we discovered as we worked on this project. This included documentation
-          on the sketches we made for the interface of WebReg and the prototype that we created. A reflection was also done for our group to determine what went well throughout 
-          this project and what we believed could have been improved on to either have a smoother experience or to produce a better result. The final report can be viewed 
-          <a href="assets/report.pdf" class="doc-link">here</a>.
-        </p>
+      <h3 class="section-title"><b>Final Report</b></h3>
+      <p class="section-text">At the end, our group compiled together the findings that we discovered as we worked on
+        this project. This included documentation
+        on the sketches we made for the interface of WebReg and the prototype that we created. A reflection was also
+        done for our group to determine what went well throughout
+        this project and what we believed could have been improved on to either have a smoother experience or to produce
+        a better result. The final report can be viewed
+        <a href="assets/report.pdf" class="doc-link">here</a>.
+      </p>
     </section>
   </div>
 
-<!--Contact Section-->
-<footer>
-  <div class="footer-message">let's stay connected!</div>
-  <div class="social-links">
-    <div class="email">
-      <a href="mailto:thehamiltonko@gmail.com"><img src="../../images/love-letter-emoji.png" alt="Letter emoji"></a>
+  <!--Contact Section-->
+  <footer>
+    <div class="footer-message">let's stay connected!</div>
+    <div class="social-links">
+      <div class="email">
+        <a href="mailto:thehamiltonko@gmail.com"><img src="../../images/love-letter-emoji.png" alt="Letter emoji"></a>
+      </div>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="../../images/linkedin.png"
+            alt="Linkedin logo"></a>
+      </div>
     </div>
-  <div class="linkedin">
-    <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="../../images/linkedin.png" alt="Linkedin logo"></a>
-  </div>
-</div>
   </footer>
 
-<!--Popup-->
-<div id="popup-container"></div>
+  <!--Popup-->
+  <div id="popup-container"></div>
 
 </body>
+
 </html>

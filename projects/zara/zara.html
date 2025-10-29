@@ -14,120 +14,129 @@ EMAIL: hamiltk@uci.edu
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/override.css">
   <link rel="stylesheet" href="../../components/project.css">
-  <link rel="stylesheet" href="../../components/navigation.css">
   <link rel="stylesheet" href="../../components/footer.css">
   <link rel="stylesheet" href="zara.css">
   <link rel="stylesheet" href="../../components/popup/popup.css">
   <script src="../../components/popup/popup.js" defer></script>
   <title>Hamilton Ko - Portfolio</title>
 </head>
+
 <body>
-
   <!--Navigation-->
-  <nav>
-    <div class="Homepage">
-      <a href="../../index.html"><img class="homepage" src="../../images/home-icon.png" alt="Icon drawing"></a>
-    </div>
-    <div class="navigation">
-      <ul>
-        <li><a href="../../index.html"><strong>Home</strong></a></li>
-        <li><a href="../../about.html"><strong>About</strong></a></li>
-        <li><a href="../../Hamilton Ko - Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="nav"></div>
+  <script src="/components/navigation/nav-loader.js"></script>
 
-  <!--Top of page-->
-  <div class="content">
   <header>
     <div class="top-page">
-      <a href="../../index.html#projects-section" class="back-button"> &#60 Back</a>
+      <a href="/projects.html" class="back-button"> &#60 Back</a>
       <div class="header-section">
         <h1 class="project-title"><b>Zara: Redesigned</b></h1>
-        <p class="members"><strong>Group Members</strong>: Kushi Sanjay Kumbagowdana, Mia Linh Nguyen, Tiffini Thi Tran, Marionette Quey Umali, Hamilton Ko</p>
+        <p class="members"><strong>Group Members</strong>: Kushi Sanjay Kumbagowdana, Mia Linh Nguyen, Tiffini Thi Tran,
+          Marionette Quey Umali, Hamilton Ko</p>
       </div>
-    </div>
-    <div class="general">
-      <h3 class="section-title"><b>Overview</b></h3>
-    <p class="project-summary">Our team explored different websites when stumbling upon the Zara website which was difficult to navigate through and was not accessible. 
-      With so many issues present, we made an attempt to redesign the website to be more accessible.
-    </p>
     </div>
   </header>
 
-<section id="background">
-  <h3 class="section-title"><b>Background</b></h3>
-  <p class="section-text">Before we started brainstorming ideas and coming up with new designs, we had to go through the current Zara website and see what issues consistently appeared
-    and record them to see what we might want to tackle.
-    </p>
-  <p class="section-text">
-    Some of the major issues that we consistently came across was text being too small to read without having to zoom into the page, the navigation bar continuing to appear at the top 
-    of the page even as the user scrolls down, causing it to overlap on top of the product images, and each clothing section as well as clothing department having completely different layouts
-    which made the shopping experience confusing due to being shown either multiple products in a grid or giant photos and videos of the clothing being worn by models.
-    </p>
-  <p class="section-text">
-    The one issue that we encountered that shocked us the most was there being an accessiblity button with a multitude of options to help increase the text or contrast, use voice commands, and 
-    adjust screen readers but almost none of these options working or working in the way that it is intended.
-  </p>
-
-  <div class="image-container">
-    <!--Insert website images here-->
-  </div>
-</section>
-
-<section id="concept">
-  <h3 class="section-title"><b>Problem Statement, Concept, and Framework</b></h3>
-  <p class="section-text">Our first steps were to determine what features and options that we were going to be altering or incorporating in our redesign to improve the 
-    overall shopping experience while also maintaining the brand's image. To accomplish this, we determined to use Next.js as our framework as it had benefits such as 
-    image optimization, fast loading speeds, and internalization support which all seemed to align with what would be required for an e-commerce website like Zara.
-    The full document can be viewed <a href="assets/App Concept, Framework, and Problem Statement.pdf" class="doc-link">here</a>.</p>
-    <!--Document link: https://docs.google.com/document/d/1Hihf6j_7RIh8TH2PSW-tv0xpA6ndFeCMekcTXgv1Msc/edit?tab=t.0#heading=h.dbb5ycx9twfy-->
-</section>
-
-<section id="prototype">
-  <h3 class="section-title"><b>Evaluations and Prototype</b></h3>
-  <p class="section-text">Once we determined our framework and the design issues that we wanted to address in our redesign, we each began making wireframes to see which 
-    design elements that we liked and wanted to pursue. Each of our designs focused on making it easier for the user to view the product and be able to read the product name along
-    with the sizes available. The layout of the website was also made to be consistent between different pages to ensure that users are not confused as they switch between 
-    different categories. We interviewed users using our wireframes and the original website to evaluate what designs best suited what the typical user might be expecting. 
-    We then took these results and created a prototype. 
-  </p>
-  <div class="image-container">
-    <!--Insert prototype images here-->
-  </div>
-</section>
-
-<section id="presentation">
-  <h3 class="section-title"><b>Presentation</b></h3>
-  <p class="section-text">The presentation slides can be found
-    <a href="assets/Final Video Presentation.pdf" class="doc-link">here</a>.
-    <!--Link to doc link: https://docs.google.com/presentation/d/193RFL_P2VHCgo3S5r3vnwmLEpQCawAc0LcvhJ2NfcNs/edit-->
-  </p>
-  <div class="video">
-    <div class="video-content">
-      <video controls>
-        <source src="assets/zara-presentation.mp4" type="video/mp4">
-      </video>            
-      <p class="alt-link">If video can't be played, <a href="https://drive.google.com/file/d/17yiP3iiAvW5J-UkO62fpcBl2FTfWy1Xf/view?usp=sharing" class="video-link">click here to view the project demo</a>.</p>
+  <!--Top of page-->
+  <div class="content">
+    <div class="general">
+      <h3 class="section-title"><b>Overview</b></h3>
+      <p class="project-summary">Our team explored different websites when stumbling upon the Zara website which was
+        difficult to navigate through and was not accessible.
+        With so many issues present, we made an attempt to redesign the website to be more accessible.
+      </p>
     </div>
-  </div>
-</section>
+
+    <section id="background">
+      <h3 class="section-title"><b>Background</b></h3>
+      <p class="section-text">Before we started brainstorming ideas and coming up with new designs, we had to go through
+        the current Zara website and see what issues consistently appeared
+        and record them to see what we might want to tackle.
+      </p>
+      <p class="section-text">
+        Some of the major issues that we consistently came across was text being too small to read without having to
+        zoom into the page, the navigation bar continuing to appear at the top
+        of the page even as the user scrolls down, causing it to overlap on top of the product images, and each clothing
+        section as well as clothing department having completely different layouts
+        which made the shopping experience confusing due to being shown either multiple products in a grid or giant
+        photos and videos of the clothing being worn by models.
+      </p>
+      <p class="section-text">
+        The one issue that we encountered that shocked us the most was there being an accessiblity button with a
+        multitude of options to help increase the text or contrast, use voice commands, and
+        adjust screen readers but almost none of these options working or working in the way that it is intended.
+      </p>
+
+      <div class="image-container">
+        <!--Insert website images here-->
+      </div>
+    </section>
+
+    <section id="concept">
+      <h3 class="section-title"><b>Problem Statement, Concept, and Framework</b></h3>
+      <p class="section-text">Our first steps were to determine what features and options that we were going to be
+        altering or incorporating in our redesign to improve the
+        overall shopping experience while also maintaining the brand's image. To accomplish this, we determined to use
+        Next.js as our framework as it had benefits such as
+        image optimization, fast loading speeds, and internalization support which all seemed to align with what would
+        be required for an e-commerce website like Zara.
+        The full document can be viewed <a href="assets/App Concept, Framework, and Problem Statement.pdf"
+          class="doc-link">here</a>.</p>
+      <!--Document link: https://docs.google.com/document/d/1Hihf6j_7RIh8TH2PSW-tv0xpA6ndFeCMekcTXgv1Msc/edit?tab=t.0#heading=h.dbb5ycx9twfy-->
+    </section>
+
+    <section id="prototype">
+      <h3 class="section-title"><b>Evaluations and Prototype</b></h3>
+      <p class="section-text">Once we determined our framework and the design issues that we wanted to address in our
+        redesign, we each began making wireframes to see which
+        design elements that we liked and wanted to pursue. Each of our designs focused on making it easier for the user
+        to view the product and be able to read the product name along
+        with the sizes available. The layout of the website was also made to be consistent between different pages to
+        ensure that users are not confused as they switch between
+        different categories. We interviewed users using our wireframes and the original website to evaluate what
+        designs best suited what the typical user might be expecting.
+        We then took these results and created a prototype.
+      </p>
+      <div class="image-container">
+        <!--Insert prototype images here-->
+      </div>
+    </section>
+
+    <section id="presentation">
+      <h3 class="section-title"><b>Presentation</b></h3>
+      <p class="section-text">The presentation slides can be found
+        <a href="assets/Final Video Presentation.pdf" class="doc-link">here</a>.
+        <!--Link to doc link: https://docs.google.com/presentation/d/193RFL_P2VHCgo3S5r3vnwmLEpQCawAc0LcvhJ2NfcNs/edit-->
+      </p>
+      <div class="video">
+        <div class="video-content">
+          <video controls>
+            <source src="assets/zara-presentation.mp4" type="video/mp4">
+          </video>
+          <p class="alt-link">If video can't be played, <a
+              href="https://drive.google.com/file/d/17yiP3iiAvW5J-UkO62fpcBl2FTfWy1Xf/view?usp=sharing"
+              class="video-link">click here to view the project demo</a>.</p>
+        </div>
+      </div>
+    </section>
   </div>
 
-    <!--Contact Section-->
-<footer>
-  <div class="footer-message">let's stay connected!</div>
-  <div class="social-links">
-    <div class="email">
-      <a href="mailto:thehamiltonko@gmail.com"><img src="../../images/love-letter-emoji.png" alt="Letter emoji"></a>
+  <!--Contact Section-->
+  <footer>
+    <div class="footer-message">let's stay connected!</div>
+    <div class="social-links">
+      <div class="email">
+        <a href="mailto:thehamiltonko@gmail.com"><img src="../../images/love-letter-emoji.png" alt="Letter emoji"></a>
+      </div>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="../../images/linkedin.png"
+            alt="Linkedin logo"></a>
+      </div>
     </div>
-  <div class="linkedin">
-    <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="../../images/linkedin.png" alt="Linkedin logo"></a>
-  </div>
-</div>
   </footer>
 
   <!--Popup-->
   <div id="popup-container"></div>
 </body>
+
 </html>
