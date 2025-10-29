@@ -1,21 +1,11 @@
-@font-face {
-    font-family: "Aesthetic Moment";
-    src: url("./fonts/Aesthetic Moment Italic Personal Used.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    background-color: #FBFAEE;
+    background-color: #f8f6f2;
     font-family: Arial;
-}
-.homepage {
-    max-width: 90px;
 }
 
 /*Page content*/
@@ -29,8 +19,6 @@ body {
 .top-page {
     background-color: #A1D1B7;
     padding: 1.5rem;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
     height: 13rem;
     display: flex;
     flex-direction: column;
@@ -38,7 +26,7 @@ body {
 
 .back-button {
     text-decoration: none;
-    color:black;
+    color: black;
     font-size: 1.4rem;
     align-self: flex-start;
 }
@@ -87,20 +75,20 @@ body {
 }
 
 .doc-link {
-    color:black;
+    color: black;
     font-size: 1.3rem;
 }
 
-.doc-link:hover{
-    color:#5CBBFF;
+.doc-link:hover {
+    color: #5CBBFF;
 }
 
 .images-container {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding:0;
+    padding: 0;
     flex-wrap: wrap;
     gap: 2rem;
 }
