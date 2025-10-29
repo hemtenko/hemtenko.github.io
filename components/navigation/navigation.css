@@ -1,12 +1,19 @@
 /*Top Row Navigation*/
+#nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 1rem 1.75rem;
+}
+
+.homepage {
+    max-width: 90px;
 }
 
 .navigation ul {
@@ -21,17 +28,22 @@ nav {
     padding: 0.5rem 1.5rem;
 }
 
-.navigation ul li, .navigation ul li a{
+.navigation ul li,
+.navigation ul li a {
     text-decoration: none;
     color: black;
     font-size: 1.75rem;
 }
 
-.navigation ul li a:hover{
+.navigation ul li.dropdown {
+    position: relative;
+}
+
+.navigation ul li a:hover {
     color: #5199FF;
 }
 
-.navigation ul li a > .dropdown {
+.navigation ul li a>.dropdown {
     border-radius: 1rem;
 }
 
@@ -46,25 +58,29 @@ nav {
 }*/
 
 /*Dropdown menu*/
-.dropdown > .dropdown-menu {
+.dropdown>.dropdown-menu {
     display: none;
-}
-
-.dropdown:hover > .dropdown-menu {
-    display: block;
+    position: absolute;
     background: white;
     white-space: nowrap;
     padding: 0.75rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+    z-index: 1001;
+    min-width: max-content;
+    width: auto;
 }
 
-.navigation ul li.dropdown > .dropdown-menu {
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.navigation ul li.dropdown>.dropdown-menu {
     border-radius: 1rem;
     min-width: 100%;
     margin-left: -.25rem;
 }
 
-.navigation ul li.dropdown > .dropdown-menu li a{
+.navigation ul li.dropdown>.dropdown-menu li a {
     font-size: 1.35rem;
 }
