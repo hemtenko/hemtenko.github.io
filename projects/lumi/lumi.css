@@ -1,3 +1,10 @@
+.prompt {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 0.75rem;
+}
+
 /* Media Queries for smaller screens (mobile) */
 @media (max-width: 768px) {
     nav {
