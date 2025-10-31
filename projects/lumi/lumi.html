@@ -17,7 +17,6 @@ EMAIL: hamiltk@uci.edu
   <link rel="stylesheet" href="../../components/footer.css">
   <link rel="stylesheet" href="lumi.css">
   <link rel="stylesheet" href="../../components/popup/popup.css">
-  <script src="../../components/popup/popup.js" defer></script>
   <title>Hamilton Ko - Portfolio</title>
 </head>
 
@@ -26,112 +25,76 @@ EMAIL: hamiltk@uci.edu
   <div id="nav"></div>
   <script src="/components/navigation/nav-loader.js"></script>
 
+  <!--Popup-->
+  <div id="popup-container"></div>
+  <script src="../../components/popup/popup.js" defer></script>
+
   <header>
     <div class="top-page">
       <a href="/projects.html" class="back-button"> &#60 Back</a>
-      <div class="header-section">
-        <h1 class="project-title"><b>Lumi</b></h1>
-      </div>
+      <h1 class="project-title"><b>Lumi</b></h1>
+      <p class="members"><strong>Group Members</strong><br> Candice Li, Audrey Chen, Julia Tija, Rylan Rubiono, Danielle Ligasan, Hamilton Ko
+      </p>
     </div>
   </header>
 
   <!--Top of page-->
-  <section class="project">
-    <aside class="project-info">
-      <p class="members"><strong>Group Members</strong>: Candice Li, Audrey Chen, Julia Tija, Rylan Rubiono, Danielle
-        Ligasan, Hamilton Ko
+  <div class="content">
+    <div class="general">
+      <h3 class="section-title"><b>Overview</b></h3>
+      <p class="project-summary">Lumi is a mobile app meant to help light up the way for individuals to navigate through unfamiliar areas and to easily contact friends or family in times of emergency. This was a project that was part of Project Teams, a 10 week long program that is operated by DESIGN at UCI.The prompt for Spring 2025 was: <br>
+        <b class="prompt">Design for Social Good</b>
       </p>
-    </aside>
-
-    <div class="content">
-      <div class="general">
-        <h3 class="section-title"><b>Overview</b></h3>
-        <p class="project-summary">Lumi is a mobile app meant to help light up the way for individuals to navigate
-          through
-          unfamiliar areas and to easily contact
-          friends or family in times of emergency. This was a project that was part of Project Teams, a 10 week long
-          program that is operated by DESIGN at UCI.
-          The prompt for Spring 2025 was: <br>
-          <b class="prompt">Design for Social Good</b>
-        </p>
-      </div>
-
-      <section id="ideation">
-        <h3 class="section-title"><b>Ideation</b></h3>
-        <p class="section-text">When first given the prompt, we decided to brainstorm different issues that many
-          commonly
-          come across. This led us to focus on the
-          issue of personal safety especially when it comes to traveling alone in a new and unknown area.
-        </p>
-      </section>
-
-      <section id="survey">
-        <h3 class="section-title"><b>Surveying</b></h3>
-        <p class="section-text">Once the app concept was determined, we began surveying college students (our main
-          population) about some of the techniques that they utilize
-          when going out late at night as well as what they would like to have as an option with an app like this. This
-          helped us to determine what features were necessary and
-          what could be helpful to include.
-        </p>
-      </section>
-
-      <section id="features">
-        <h3 class="section-title"><b>App Features</b></h3>
-        <h2><b><u>Heat Map</u></b></h2>
-        <p class="section-text">
-          The heat map showcases a map of the current location of the user and uses different colors to indicate whether
-          the user to close to or getting closer to an area that
-          is known to have dangerous activity going on. This is based on user submissions. The map also includes a
-          search
-          feature that allows the user to find the closest safe
-          zone and navigate them to it.</p>
-        <h2><b><u>Emergency Contacts</u></b></h2>
-        <p class="section-text">
-          A button with a red siren symbol is present in the upper right corner of the app. When clicked on, the user is
-          brought to a screen where they
-          have two choices: dial 911 or dial one of the emergency contacts that the user has assigned which they can
-          alter
-          in settings. This feature is meant to help users when
-          they are in danger to spend less time going through the steps of dialing emergency services, a friend, or
-          family
-          member.</p>
-        <h2><b><u>Virtual Check-in</u></b></h2>
-        <p class="section-text">
-          This feature allows the user to notify a friend or family member about where they are going and requires the
-          user to contact the person they chose after either a set
-          amount of time or when the user arrives at their destination. The person they choose to send the check-in will
-          receive a text that allows them to track them live and
-          see the route they are taking to their destination.
-        </p>
-      </section>
-
-      <section id="design">
-        <h3 class="section-title"><b>Design</b></h3>
-        <p class="section-text">To ensure that the user is able to use the app discreetly, we chose a darker color
-          scheme
-          to avoid a bright screen light as we expected this
-          app to be commonly used at night as well as provide a sense of comfort for the user. For example, we utilized
-          red for buttons that are meant to be used in emergencies
-          as well as for the heat map to showcase the area as someplace that the user should be wary of. The buttons and
-          sliders are reminscent of the Apple interface to provide
-          some familiarity and ease of use to the app. </p>
-      </section>
-
-      <section id="demo">
-        <h3 class="section-title"><b>Demo</b></h3>
-        <div class="video">
-          <div class="video-content">
-            <video controls>
-              <source src="assets/lumi.mp4" type="video/mp4">
-            </video>
-            <p class="alt-link">If video can't be played, <a
-                href="https://drive.google.com/file/d/1vl7V1_or9tG6a9QRV3uk6badrBH4ysF7/view?usp=sharing"
-                class="video-link">click here to view the project demo</a>.</p>
-          </div>
-        </div>
-      </section>
     </div>
-  </section>
+
+    <section id="ideation">
+      <h3 class="section-title"><b>Ideation</b></h3>
+      <p class="section-text">When first given the prompt, we decided to brainstorm different issues that many commonly come across. This led us to focus on the issue of personal safety especially when it comes to traveling alone in a new and unknown area.
+      </p>
+    </section>
+
+    <section id="survey">
+      <h3 class="section-title"><b>Surveying</b></h3>
+      <p class="section-text">Once the app concept was determined, we began surveying college students (our main population) about some of the techniques that they utilize when going out late at night as well as what they would like to have as an option with an app like this. This helped us to determine what features were necessary and what could be helpful to include.
+      </p>
+    </section>
+
+    <section id="features">
+      <h3 class="section-title"><b>App Features</b></h3>
+      <h2><b><u>Heat Map</u></b></h2>
+      <p class="section-text">
+        The heat map showcases a map of the current location of the user and uses different colors to indicate whether the user to close to or getting closer to an area that is known to have dangerous activity going on. This is based on user submissions. The map also includes a search feature that allows the user to find the closest safe zone and navigate them to it.</p>
+      <h2><b><u>Emergency Contacts</u></b></h2>
+      <p class="section-text">
+        A button with a red siren symbol is present in the upper right corner of the app. When clicked on, the user is brought to a screen where they have two choices: dial 911 or dial one of the emergency contacts that the user has assigned which they can alter in settings. This feature is meant to help users when
+        they are in danger to spend less time going through the steps of dialing emergency services, a friend, or family member.
+      </p>
+      <h2><b><u>Virtual Check-in</u></b></h2>
+      <p class="section-text">
+        This feature allows the user to notify a friend or family member about where they are going and requires the user to contact the person they chose after either a set amount of time or when the user arrives at their destination. The person they choose to send the check-in will receive a text that allows them to track them live and see the route they are taking to their destination.
+      </p>
+    </section>
+
+    <section id="design">
+      <h3 class="section-title"><b>Design</b></h3>
+      <p class="section-text">To ensure that the user is able to use the app discreetly, we chose a darker color scheme to avoid a bright screen light as we expected this app to be commonly used at night as well as provide a sense of comfort for the user. For example, we utilized red for buttons that are meant to be used in emergencies as well as for the heat map to showcase the area as someplace that the user should be wary of. The buttons and sliders are reminscent of the Apple interface to provide some familiarity and ease of use to the app. 
+      </p>
+    </section>
+
+    <section id="demo">
+      <h3 class="section-title"><b>Demo</b></h3>
+      <div class="video">
+        <div class="video-content">
+          <video controls>
+            <source src="assets/lumi.mp4" type="video/mp4">
+          </video>
+          <p class="alt-link">If video can't be played, 
+            <a href="https://drive.google.com/file/d/1vl7V1_or9tG6a9QRV3uk6badrBH4ysF7/view?usp=sharing" class="video-link">click here to view the project demo</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!--Contact Section-->
   <footer>
