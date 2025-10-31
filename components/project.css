@@ -9,19 +9,13 @@ body {
 }
 
 /*Page content*/
-.content {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-    font-family: "Arial";
-}
-
 .top-page {
-    background-color: #A1D1B7;
-    padding: 1.5rem;
-    height: 13rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #A1D1B7;
+    padding: 1.5rem;
+    height: auto;
 }
 
 .back-button {
@@ -35,22 +29,22 @@ body {
     color: white;
 }
 
-.header-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 .project-title {
     font-size: 4.5rem;
     margin: 0;
 }
 
+.content {
+    margin: 0 auto;
+    max-width: 70%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
 .members {
     font-size: 1.5rem;
     margin: 0 auto;
+    text-align: center;
 }
 
 .general {
