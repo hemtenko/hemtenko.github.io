@@ -4,11 +4,6 @@
     height: auto;
 }
 
-.figma {
-   display: flex;
-   justify-content: center;
-}
-
 /* Media Queries for smaller screens (mobile) */
 @media (max-width: 768px) {
     nav {
