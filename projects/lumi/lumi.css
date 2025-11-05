@@ -27,6 +27,10 @@
     border-radius: 1.65rem;
 }
 
+.images-content {
+    flex: 1;
+}
+
 /* Media Queries for smaller screens (mobile) */
 @media (max-width: 768px) {
     nav {
