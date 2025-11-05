@@ -1,3 +1,8 @@
+.images-content img {
+    width: 34rem;
+    height: auto;
+}
+
 /* Media Queries for smaller screens (mobile) */
 @media (max-width: 768px) {
     nav {

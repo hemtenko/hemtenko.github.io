@@ -13,10 +13,10 @@ EMAIL: hamiltk@uci.edu
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/override.css">
-  <link rel="stylesheet" href="../../components/project.css">
-  <link rel="stylesheet" href="../../components/footer.css">
+  <link rel="stylesheet" href="/components/project.css">
+  <link rel="stylesheet" href="/components/footer.css">
+  <link rel="stylesheet" href="/components/popup/popup.css">
   <link rel="stylesheet" href="zara.css">
-  <link rel="stylesheet" href="../../components/popup/popup.css">
   <title>Hamilton Ko - Portfolio</title>
 </head>
 
@@ -27,19 +27,24 @@ EMAIL: hamiltk@uci.edu
 
   <!--Popup-->
   <div id="popup-container"></div>
-  <script src="../../components/popup/popup.js" defer></script>
+  <script src="/components/popup/popup.js" defer></script>
 
   <header>
     <div class="top-page">
       <a href="/projects.html" class="back-button"> &#60 Back</a>
-        <h1 class="project-title"><b>Zara: Redesigned</b></h1>
-        <p class="members"><strong>Group Members</strong><br>
-          Kushi Sanjay Kumbagowdana, Mia Linh Nguyen, Tiffini Thi Tran, Marionette Quey Umali, Hamilton Ko</p>
+      <h1 class="project-title"><b>Zara: Redesigned</b></h1>
     </div>
   </header>
 
   <!--Top of page-->
   <div class="content">
+    <hr>
+    <div class="team">
+      <p class="members"><strong>Group Members</strong><br>
+        Kushi Sanjay Kumbagowdana, Mia Linh Nguyen, Tiffini Thi Tran, Marionette Quey Umali, Hamilton Ko</p>
+    </div>
+    <hr>
+
     <div class="general">
       <h3 class="section-title"><b>Overview</b></h3>
       <p class="project-summary">Our team explored different websites when stumbling upon the Zara website which was difficult to navigate through and was not accessible. With so many issues present, we made an attempt to redesign the website to be more accessible.
@@ -57,25 +62,37 @@ EMAIL: hamiltk@uci.edu
         The one issue that we encountered that shocked us the most was there being an accessiblity button with a multitude of options to help increase the text or contrast, use voice commands, and adjust screen readers but almost none of these options working or working in the way that it is intended.
       </p>
 
-      <div class="image-container">
-        <!--Insert website images here-->
+      <div class="images-container">
+        <div class="images-content">
+          <img src="assets/zara-page1.png">
+          <span class="caption">The navigation text is small and overlaps images</span>
+        </div>
+        <div class="images-content">
+          <img src="assets/zara-page2.png">
+          <span class="caption">Image layout is different from previous section</span>
+        </div>
+        <div class="images-content">
+          <img src="assets/zara-contrast.png">
+          <span class="caption">Contrast option doesn't show logo and is difficult to view overall</span>
+        </div>
       </div>
     </section>
 
     <section id="concept">
       <h3 class="section-title"><b>Problem Statement, Concept, and Framework</b></h3>
-      <p class="section-text">Our first steps were to determine what features and options that we were going to be altering or incorporating in our redesign to improve the overall shopping experience while also maintaining the brand's image. To accomplish this, we determined to use Next.js as our framework as it had benefits such as image optimization, fast loading speeds, and internalization support which all seemed to align with what would be required for an e-commerce website like Zara. The full document can be viewed 
+      <p class="section-text">Our first steps were to determine what features and options that we were going to be altering or incorporating in our redesign to improve the overall shopping experience while also maintaining the brand's image. To accomplish this, we determined to use Next.js as our framework as it had benefits such as image optimization, fast loading speeds, and internalization support which all seemed to align with what would be required for an e-commerce website like Zara. The full document can be viewed
         <a href="assets/App Concept, Framework, and Problem Statement.pdf" class="doc-link">here</a>.
+        <!--Link to document: https://docs.google.com/document/d/1Hihf6j_7RIh8TH2PSW-tv0xpA6ndFeCMekcTXgv1Msc/edit?tab=t.0#heading=h.dbb5ycx9twfy-->
       </p>
-      <!--Document link: https://docs.google.com/document/d/1Hihf6j_7RIh8TH2PSW-tv0xpA6ndFeCMekcTXgv1Msc/edit?tab=t.0#heading=h.dbb5ycx9twfy-->
+      
     </section>
 
     <section id="prototype">
       <h3 class="section-title"><b>Evaluations and Prototype</b></h3>
       <p class="section-text">Once we determined our framework and the design issues that we wanted to address in our redesign, we each began making wireframes to see which design elements that we liked and wanted to pursue. Each of our designs focused on making it easier for the user to view the product and be able to read the product name along with the sizes available. The layout of the website was also made to be consistent between different pages to ensure that users are not confused as they switch between different categories. We interviewed users using our wireframes and the original website to evaluate what designs best suited what the typical user might be expecting. We then took these results and created a prototype.
       </p>
-      <div class="image-container">
-        <!--Insert prototype images here-->
+      <div class="figma">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/oyE1MBBXtcc4FgwXdmOhHD/Zara-Prototype?node-id=121-564&embed-host=share" allowfullscreen></iframe>
       </div>
     </section>
 
@@ -83,15 +100,16 @@ EMAIL: hamiltk@uci.edu
       <h3 class="section-title"><b>Presentation</b></h3>
       <p class="section-text">The presentation slides can be found
         <a href="assets/Final Video Presentation.pdf" class="doc-link">here</a>.
-        <!--Link to doc link: https://docs.google.com/presentation/d/193RFL_P2VHCgo3S5r3vnwmLEpQCawAc0LcvhJ2NfcNs/edit-->
+        <!--Link to document: https://docs.google.com/presentation/d/193RFL_P2VHCgo3S5r3vnwmLEpQCawAc0LcvhJ2NfcNs/edit-->
       </p>
       <div class="video">
         <div class="video-content">
           <video controls>
             <source src="assets/zara-presentation.mp4" type="video/mp4">
           </video>
-          <p class="alt-link">If video can't be played, 
-            <a href="https://drive.google.com/file/d/17yiP3iiAvW5J-UkO62fpcBl2FTfWy1Xf/view?usp=sharing" class="video-link">click here to view the project demo</a>.
+          <p class="alt-link">If video can't be played,
+            <a href="https://drive.google.com/file/d/17yiP3iiAvW5J-UkO62fpcBl2FTfWy1Xf/view?usp=sharing"
+              class="video-link">click here to view the project demo</a>.
           </p>
         </div>
       </div>
