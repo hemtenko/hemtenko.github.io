@@ -1,5 +1,5 @@
 footer {
-    background-color: #61BF5E;
+    background-color: #3ecf8e;
     text-align: center;
     padding: 1.3rem 1rem;
 }
@@ -7,22 +7,26 @@ footer {
 .social-links {
     display: flex;
     flex-direction: row;
-    gap:0.5rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
 }
 
-.email img {
-    width: 4rem;
-    height: auto;
+.email a,
+.linkedin a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins";
 }
 
+.email img,
 .linkedin img {
     width: 4rem;
     height: auto;
+    padding-right: 0.5rem;
 }
 
 .footer-message {
-    font-size: 3rem;
-    font-family: "Arial";
+    font-size: 2.75rem;
+    font-family: "Poppins";
 }

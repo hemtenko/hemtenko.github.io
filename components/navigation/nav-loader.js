@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const navContainer = document.getElementById("nav");
     if (!navContainer) {
