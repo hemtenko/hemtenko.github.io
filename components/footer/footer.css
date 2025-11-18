@@ -1,5 +1,21 @@
+html, 
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    margin-top: auto;
+}
+
 footer {
-    background-color: #3ecf8e;
+    background-color: #85B8FF;
     text-align: center;
     padding: 1.3rem 1rem;
 }
