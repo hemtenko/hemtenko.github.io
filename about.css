@@ -70,7 +70,7 @@ body {
 }
 
 /*Skills section*/
-#skills {
+.skills {
     padding: 2rem;
     text-align: center;
     margin: 0 auto;
@@ -143,7 +143,7 @@ body {
 
 .covers a:hover .thumbnail {
     transform: scale(1.025);
-    outline: 0.4rem solid #519affd5;
+    outline: 0.4rem solid #BCA7DD;
     outline-offset: 0;
 }
 
