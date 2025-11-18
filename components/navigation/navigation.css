@@ -1,7 +1,6 @@
 /*Top Row Navigation*/
 #nav {
-    position: sticky;
-    top: 0;
+    min-height: 8rem;
     z-index: 1000;
 }
 
@@ -10,6 +9,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.75rem;
+    position: fixed;
+    width: 100%;
 }
 
 .homepage {
