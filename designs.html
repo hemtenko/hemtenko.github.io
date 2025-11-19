@@ -13,9 +13,10 @@ EMAIL: hamiltk@uci.edu
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/override.css">
-  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="designs.css">
   <title>Hamilton Ko - Portfolio</title>
 </head>
+
 <body>
 
 <!--Navigation-->
@@ -23,19 +24,31 @@ EMAIL: hamiltk@uci.edu
   <script src="/components/navigation/nav-loader.js"></script>
 
   <header>
+    <h2 class="title">Design Gallery</h2>
+    <h3 class="design-quote">"Good design is one that is accessible for everyone"</h3>
   </header>
 
-<!--Contact Section-->
-<footer>
-  <div class="footer-message">let's stay connected!</div>
-  <div class="social-links">
-      <div class="email">
-        <a href="mailto:thehamiltonko@gmail.com"><img src="./images/love-letter-emoji.png" alt="Letter emoji"></a>
+  <section class="grid">
+      <div class="grid-item">
+        <img src="/images/design-posters/dk-poster.png" class="design" alt="Poster design for album concept" 
+        data-description="Conceptual poster design for BSS member DK for album <i>Teleparty</i>">
       </div>
-    <div class="linkedin">
-      <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="./images/linkedin.png" alt="Linkedin logo"></a>
-    </div>
-  </div>
-</footer>
+      <div class="grid-item">
+        <img src="/images/design-posters/hoshi-poster.png" class="design" alt="Poster design for album concept"
+        data-description="Conceptual poster design for BSS member Hoshi for album <i>Teleparty</i>">
+      </div>
+      <div class="grid-item">
+        <img src="/images/design-posters/charmedbykimiko.png" class="design" alt="Poster advertising a jewelry making Instagram account"
+        data-description="Promotional poster for <a href='https://www.instagram.com/charmedbykimiko/' target='_blank'>@charmedbykimiko</a>">
+      </div>
+  </section>
+
+  <!--Popup-->
+  <div id="popup-container"></div>
+  <script src="/components/popup/popup.js"></script>
+
+<!--Contact Section-->
+<div id="footer"></div>
+<script src="/components/footer/footer.js"></script>
 </body>
 </html>
