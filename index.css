@@ -75,6 +75,7 @@ body {
   gap: 5rem;
   flex-wrap: wrap;
   padding: 2rem;
+  margin-bottom: 4rem;
 }
 
 .work-cards a {
@@ -96,7 +97,7 @@ body {
   padding-top: 1rem;
   border: black 0.15rem solid;
   border-radius: 2rem;
-  background-color: rgb(238, 238, 238);
+  background-color: #E0EBFA;
 }
 
 .card-title {
