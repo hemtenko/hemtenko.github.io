@@ -29,6 +29,36 @@
     height: 100%;
 }
 
+.popup.design .popup-content {
+    width: 70vw;
+    max-width: 90vw;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    border: none;
+    border-top: none;
+}
+
+.popup.design #design-layout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.popup.design #post-text {
+    padding: 1.75rem;
+    padding-top: 3.5rem;
+    font-family: "Instagram Sans";
+    font-size: 1.5rem;    
+}
+
+#post-text hr {
+    width: 100%;
+    margin: 0;
+    display: block;
+    align-self: stretch;
+}
+
 .close {
     position: absolute;
     top: -3.75rem;
@@ -39,4 +69,13 @@
 
 .close:hover {
     color: white;
+}
+
+.popup.design .close {
+   top: -1rem;
+   right: 0.5rem;
+}
+
+.popup.design .close:hover {
+    color: lightgray;
 }

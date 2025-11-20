@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const frame = document.getElementById("frame");
       const close = document.querySelector(".close");
 
+      //Document popup
       document.querySelectorAll("a.doc-link").forEach(link => {
         link.addEventListener("click", function (e) {
           e.preventDefault();
@@ -32,9 +33,42 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       });
 
+      //Design popup
+      document.querySelectorAll("img.design").forEach(img => {
+        img.addEventListener("click", function () {
+          const post = document.getElementById("post");
+          const designLayout = document.getElementById("design-layout");
+          const postTitle = document.getElementById("post-title");
+          const postDesc = document.getElementById("post-desc");
+
+          frame.style.display = "none";
+          post.src = this.src;
+          post.style.display = "block";
+          designLayout.style.display = "flex";
+          postTitle.textContent = this.dataset.title || "";
+          postDesc.innerHTML = this.dataset.description || "";
+          modal.classList.add("design");
+          modal.style.display = "flex";
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      //Close popup
       function closePopup() {
         modal.style.display = "none";
         frame.src = "";
+        frame.style.display = "block";
+
+        const post = document.getElementById("post");
+        const designLayout = document.getElementById("design-layout");
+        const postTitle = document.getElementById("post-title");
+        const postDesc = document.getElementById("post-desc");
+        post.src = "";
+        post.style.display = "none";
+        designLayout.style.display = "none";
+        postTitle.textContent = "";
+        postDesc.innerHTML = "";
+        modal.classList.remove("design");
 
         document.body.style.overflow = "auto";
       }
