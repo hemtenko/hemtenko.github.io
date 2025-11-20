@@ -1,29 +1,41 @@
 @font-face {
     font-family: "Aesthetic Moment";
-    src: url(/fonts/Aesthetic\ Moment\ \ Italic\ Personal\ Used.ttf) format("ttf");
+    src: url(/fonts/Aesthetic\ Moment\ \ Italic\ Personal\ Used.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
     font-family: "C800";
-    src: url(/fonts/C800.ttf) format("ttf");
+    src: url(/fonts/C800.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Greater Theory";
-    src: url(/fonts/GreaterTheory.otf) format("otf");
+    src: url(/fonts/GreaterTheory.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Heavitas";
-    src: url(/fonts/Heavitas.ttf) format("ttf");
+    src: url(/fonts/Heavitas.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Instagram Sans";
-    src: url(/fonts/Instagram\ Sans.ttf) format("ttf");
+    src: url(/fonts/Instagram\ Sans.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Poppins";
-    src: url(/fonts/Poppins-Black.ttf) format("ttf");
+    src: url(/fonts/Poppins-Black.ttf) format("truetype");
+    font-weight: 900;
+    font-style: normal;
 }
