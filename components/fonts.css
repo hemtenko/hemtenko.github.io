@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Aesthetic Moment";
+    src: url(/fonts/Aesthetic\ Moment\ \ Italic\ Personal\ Used.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "C800";
+    src: url(/fonts/C800.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Greater Theory";
+    src: url(/fonts/GreaterTheory.otf) format("otf");
+}
+
+@font-face {
+    font-family: "Heavitas";
+    src: url(/fonts/Heavitas.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Instagram Sans";
+    src: url(/fonts/Instagram\ Sans.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins-Black.ttf) format("ttf");
+}
