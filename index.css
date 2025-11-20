@@ -78,13 +78,13 @@ body {
   margin-bottom: 4rem;
 }
 
-.work-cards a {
+.work-cards .work-card {
   text-decoration: none;
   border-radius: 2rem;
   transition: 0.5s;
 }
 
-.work-cards a:hover {
+.work-cards .work-card:hover {
   transform: translateY(-1rem);
   transition: 0.5s;
 }
