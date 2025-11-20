@@ -5,72 +5,44 @@ body {
     padding: 0;
     line-height: 1.5;
     background-color: #FBFAEE;
-}
-
-/*Top row navigation*/
-.homepage {
-    max-width: 90px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FBFAEE;
-    padding: 1rem 3rem;
-}
-
-.navigation ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    gap: 1.5rem;
-    font-family: "Arial";
-}
-
-.navigation ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-}
-
-.navigation ul li:nth-child(1) a:hover {
-    color:#5CBBFF;
-}
-.navigation ul li:nth-child(2) a:hover {
-    color:#8BD0A0;  
-}
-.navigation ul li:nth-child(3) a:hover {
-    color:#C55E59;
+    font-family: Arial;
 }
 
 /*Introduction section*/
 .about {
     display: flex;
-    justify-content: flex-start;
-    gap: 0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
     background-color: #A589D1;
-    padding: 2rem;
+    padding: 4vw 4vw;
+    flex-wrap: wrap;
 }
 
 .selfie {
-    flex: 0.05 0 auto;
+    flex: 0 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 40rem;
 }
 
 .selfie img {
-    max-width: 40rem;
     height: auto;
-    width: 100%;
-    border-radius: 1px;
+    width: 115%;
     object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .about-desc {
-    flex: 1;
+    flex: 1 1 40rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+    color: #222222;
+    text-align: left;
 }
 
 .about-title {
@@ -80,19 +52,25 @@ nav {
 }
 
 .about-blurb {
-    font-family: "Arial";
+    font-family: "Poppins";
     font-size: 2rem;
     margin: 0;
 }
 
 .about-content {
-    font-family: "Arial";
     font-size: 1.5rem;
     margin: 0;
+    line-height: 1.6;
 }
 
-/*Covers section*/
-.filmings {
+.title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: "Heavitas";
+}
+
+/*Skills section*/
+.skills {
     padding: 2rem;
     text-align: center;
     margin: 0 auto;
@@ -102,9 +80,40 @@ nav {
     align-items: center;
 }
 
-.filmings-title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill img {
+    width: auto;
+    height: 7rem;
+    margin-bottom: 1rem;
+}
+
+.caption {
+    font-family: "Poppins";
+    font-size: 1.25rem;
+}
+
+/*Covers section*/
+#covers {
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .covers {
@@ -120,7 +129,6 @@ nav {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
-    font-family: "Arial";
     transition: transform 0.2s, color 0.2s;
     gap: 0.5rem;
 }
@@ -135,38 +143,13 @@ nav {
 
 .covers a:hover .thumbnail {
     transform: scale(1.025);
-    outline: 0.4rem solid #F2CE16;
+    outline: 0.4rem solid #BCA7DD;
     outline-offset: 0;
 }
 
-/*Footer*/
-footer {
-    background-color: #61BF5E;
-    text-align: center;
-    padding: 1.3rem 1rem;
-}
-
-.social-links {
-    display: flex;
-    flex-direction: row;
-    gap:0.5rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.email img {
-    width: 4rem;
-    height: auto;
-}
-
-.linkedin img {
-    width: 4rem;
-    height: auto;
-}
-
-.footer-message {
-    font-size: 3rem;
-    font-family: "Arial";
+.cover-title {
+    font-family: "Poppins";
+    font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {

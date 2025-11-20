@@ -1,0 +1,48 @@
+html, 
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    margin-top: auto;
+}
+
+footer {
+    background-color: #85B8FF;
+    text-align: center;
+    padding: 1.3rem 1rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.email a,
+.linkedin a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins";
+}
+
+.email img,
+.linkedin img {
+    width: 4rem;
+    height: auto;
+    padding-right: 0.5rem;
+}
+
+.footer-message {
+    font-size: 2.75rem;
+    font-family: "Poppins";
+}

@@ -1,3 +1,19 @@
+.image img{
+    width: 40%;
+    height: 60%;
+}
+
+.images-content img {
+    width: 100%;
+    height: auto;
+}
+
+.image img.team-image {
+    width: 60%;
+    height: auto;
+    margin-top: 2rem;
+}
+
 /* Media Queries for smaller screens (mobile) */
 @media (max-width: 768px) {
     nav {

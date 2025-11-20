@@ -1,0 +1,56 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #F8F6F2;
+    font-family: Arial;
+}
+
+.homepage {
+    max-width: 90px;
+}
+
+/*Design Section*/
+.title {
+    text-align: center;
+    font-family: "Heavitas";
+    font-size: 3.5rem;
+}
+
+.design-quote {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Poppins";
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    padding: 4rem 2rem;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+img.design {
+    cursor: pointer;
+}
+
+img.design:hover {
+    outline: 0.25rem solid #ADEBD1;
+}

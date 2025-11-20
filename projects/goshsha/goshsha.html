@@ -11,53 +11,113 @@ EMAIL: hamiltk@uci.edu
   <meta name="author" content="Hamilton Ko">
   <meta name="description" content="description of your page">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/override.css">
-  <link rel="stylesheet" href="../../components/project.css">
-  <link rel="stylesheet" href="../../components/navigation.css">
-  <link rel="stylesheet" href="../../components/footer.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/override.css">
+  <link rel="stylesheet" href="/components/project.css">
   <link rel="stylesheet" href="goshsha.css">
-  <link rel="stylesheet" href="../../components/popup/popup.css">
-  <script src="../../components/popup/popup.js" defer></script>
   <title>Hamilton Ko - Portfolio</title>
 </head>
+
 <body>
-
   <!--Navigation-->
-  <nav>
-    <div class="Homepage">
-      <a href="../../index.html"><img class="homepage" src="../../images/home-icon.png" alt="Icon drawing"></a>
-    </div>
-    <div class="navigation">
-      <ul>
-        <li><a href="../../index.html"><strong>Home</strong></a></li>
-        <li><a href="../../about.html"><strong>About</strong></a></li>
-        <li><a href="../../Hamilton Ko - Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="nav"></div>
+  <script src="/components/navigation/nav-loader.js"></script>
 
-  <!--Top of page-->
-  <div class="content">
+  <!--Popup-->
+  <div id="popup-container"></div>
+  <script src="/components/popup/popup.js" defer></script>
+
   <header>
-    <a href="../../index.html" class="back-button"> &#60 Back</a>
-    <div class="general">
-    <p class="project-summary">This page is currently unavailable at the moment.</p>
+    <div class="top-page">
+      <a href="/projects.html" class="back-button"> &#60 Back</a>
+      <h1 class="project-title"><b>Goshsha</b></h1>
     </div>
   </header>
+
+  <!--Top of page-->
+  <div class="content"> 
+    <hr>
+    <div class="team">
+      <p class="members"><b>Group Members:</b><br>
+      Kushi Sanjay Kumbagowdana, Hamilton Ko, Yu-shin Chang, Brianna Sebastian, Vimala Machiraju<br>
+      <b>Sponsor:</b> Athena Yap
+      </p>
+    </div>
+    <hr>
+
+    <div class="general">
+      <h3 class="section-title"><b>Overview</b></h3>
+       <p class="project-summary"><em>Goshsha</em> is a mobile shopping app to help find information about products through scanning or snapping photos of the product, making it like "<em>Shazam</em> for shopping". As our senior capstone project at UC Irvine, our team worked along with our sponsor to improve the app's user experience to gain more engagement and solve a common issue experienced in the beauty industry through new features.
+      </p>
+    </div>
+
+    <section id="problem">
+      <h3 class="section-title"><b>Problem</b></h3>
+      <p class="section-text">Our sponsor came to us with the problem of <em>Goshsha</em> not having high of a user retention rate and wanted to solve this issue through gamification.</p>
+    </section>
+
+    <section id="solution">
+      <h3 class="section-title"><b>Brainstorming and Solution</b></h3>
+      <p class="section-text">Our team first tackled the problem by brainstorming some ideas. Some of our initial ideas included implementing a virtual pet or an AI fashion assistant. We consulted with our sponsor about these ideas before coming to a main idea of combining the two to having a virtual assistant that can help with finding a user's shade as well as similar products. The slides for our inital ideas can be found 
+      <a href="assets/Goshsha Ideas.pdf" class="doc-link">here</a>.
+      <!--Link to document: https://docs.google.com/presentation/d/1UIw-7qs5TohvQdLhsNMgFlbK5d6GAfHqIQYK-8P3BSE/edit?usp=sharing-->
+      </p>
+      <div class="images-container">
+        <div class="images-content">
+          <img src="assets/ai idea.jpg" alt="AI assistant idea">
+          <span class="caption">AI assistant idea</span>
+        </div>
+        <div class="images-content">
+          <img src="assets/pet idea.jpg" alt="Virtual pet idea">
+          <span class="caption">Virtual pet idea</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="implement">
+      <h3 class="section-title"><b>Implementation</b></h3>
+      <p class="section-text">As <em>Goshsha</em> is currrently only an iOS app, we had to work in Xcode and Swift to implement our code. As we moved forward with implementing our features, we had made mockups in Figma and presented these to our sponsor to get their feedback and approval. Once this was achieved, we had those in charge of coding start working on making a working prototype of that while the rest of the team started working on making more refined mockups of aspects that we got feedback on or need to expand more on. </p>
+        <div class="figma">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/8zXJalnqEkvzOJ5ZcM4hwH/Design-Phases?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="demo">
+      <h3 class="section-title"><b>Project Demo</b></h3>
+      <p class="section-text">Here is a demo of the features that we created and prototyped. When presenting at the ICS Expo, a live demostration was done to showcase how it worked.</p>
+      <div class="video">
+        <div class="video-content">
+         <video controls>
+          <source src="assets/final product demo.mp4" type="video/mp4">
+         </video>
+         <p class="alt-link">If video can't be played, 
+          <a href="https://drive.google.com/file/d/1_V1nNX8PmcCnIwhyqcTKgOksu1utx66W/view?usp=sharing" class="video-link" target="_blank">click here to view the demo</a>.
+         </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="poster">
+      <h3 class="section-title"><b>Poster</b></h3>
+      <p class="section-text">This is the poster that was displayed at the ICS Expo to showcase our work.
+      </p>
+      <div class="image">
+        <img src="assets/ICS Expo Poster.jpg" alt="Poster showcasing work done in relation to Goshsha">
+      </div>
+    </section>
+
+    <section id="team">
+      <h3 class="section-title"><b>ICS Expo</b></h3>
+      <div class="image">
+        <img src="assets/team goshsha.jpeg" class="team-image" alt="Team at the ICS Expo">
+        <span class="caption">Team Shap-a-holics at the ICS Expo</span>
+      </div>
+    </section>
   </div>
 
-    <!--Contact Section-->
-<footer>
-  <div class="footer-message">let's stay connected!</div>
-  <div class="social-links">
-    <div class="email">
-      <a href="mailto:thehamiltonko@gmail.com"><img src="../../images/love-letter-emoji.png" alt="Letter emoji"></a>
-    </div>
-  <div class="linkedin">
-    <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="../../images/linkedin.png" alt="Linkedin logo"></a>
-  </div>
-</div>
-  </footer>
+  <!--Contact Section-->
+ <div id="footer"></div>
+ <script src="/components/footer/footer.js"></script>
 </body>
+
 </html>

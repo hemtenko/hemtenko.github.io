@@ -16,18 +16,11 @@ EMAIL: hamiltk@uci.edu
   <link rel="stylesheet" href="about.css">
   <title>Hamilton Ko - Portfolio</title>
 </head>
+
 <body>
   <!--Navigation-->
-  <nav>
-    <a href="index.html"><img class="homepage" src="./images/home-icon.png" alt="Icon drawing"></a>
-    <div class="navigation">
-      <ul>
-        <li><a href="index.html"><strong>Home</strong></a></li>
-        <li><a href="about.html"><strong>About</strong></a></li>
-        <li><a href="Hamilton Ko - Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="nav"></div>
+  <script src="/components/navigation/nav-loader.js"></script>
   
   <header>
     <div class="about">
@@ -36,21 +29,50 @@ EMAIL: hamiltk@uci.edu
       </div>
       <div class="about-desc">
         <h1 class="about-title">Hi! I'm Hamilton Ko</h1>
-        <h2 class="about-blurb">I am a Taiwanese-American designer, born and raised in Southern California.</h2>
-        <p class="about-content">I am a recent graduate from the University of California, Irvine with a B.S degree in Informatics with a focus in Human-Computer Interactions. <br><br>
-          I first began getting into design from my early love of Legos. Growing up, I was always intrigued by technology and grew up using 
-          devices such as computers and tablets. What always intrigued me about technology was how their designs, whether through applications 
-          or through physical machines, worked alongside with what people do in their daily lives. As a designer, I strive to learn more about and 
-          implement designs that are focused on being integrated in everyday lives while also providing ease of use and accessibility.<br><br>
-          In my free time, I like to dance and improve my skills through making photo edits and poster designs.</p>
+        <h2 class="about-blurb">I'm a Los Angeles-based UI/UX designer passionate about crafting engaging experiences and designs for everyone.</h2>
+        <p class="about-content">I recently graduated from the University of California, Irvine with a B.S. in Informatics, specializing in Human-Computer Interaction. I enjoy creating designs that balance of aesthetics and accessibility, resulting in stunning and functional experiences.</p>
+        <p class="about-content"> Outside of design, I love to dance in my free time. Check out some of my dance covers down below!</p>
       </div>
     </div>
   </header>
 
+  <section class="skills">
+    <h2 class="title">Skills</h2>
+    <div class="skills-content">
+      <div class="skill">
+        <img src="images/skills-logo/Figma-logo.svg" class="figma">
+        <span class="caption">Figma</span>
+      </div>
+      <div class="skill">
+        <img src="images/skills-logo/HTML5_logo_and_wordmark.svg" class="html">
+        <span class="caption">HTML</span>
+      </div>
+      <div class="skill">
+        <img src="images/skills-logo/CSS3_logo.svg" class="css"> 
+        <span class="caption">CSS</span>
+      </div>
+      <div class="skill">
+        <img src="images/skills-logo/JavaScript-logo.svg" class="js">
+        <span class="caption">Javascript</span>
+      </div>
+      <div class="skill">
+        <img src="images/skills-logo/Adobe_Photoshop_CC_icon.svg" class="ps">
+        <span class="caption">Photoshop</span>
+      </div>
+      <div class="skill">
+        <img src="images/skills-logo/Adobe_Illustrator_CC_icon.svg" class="illustrator">
+        <span class="caption">Illustrator</span>
+      </div>
+      <div class="skill">
+        <img src="images/skills-logo/Adobe_Premiere_Pro_CC_icon.svg" class="premiere">
+        <span class="caption">Premiere Pro</span>
+      </div>
+    </div>
+  </section>
+
 <!--Covers section-->
-<section id="covers-section">
-  <div class="filmings">
-    <h3 class="filmings-title">Check out my covers!</h3>
+<section id="covers">
+    <h3 class="title">Check out my covers!</h3>
     <div class="covers">
       <div class="row">
          <div class="col-md-4 col-sm-12 mb-4">
@@ -97,20 +119,10 @@ EMAIL: hamiltk@uci.edu
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 <!--Contact Section-->
-<footer>
-  <div class="footer-message">let's stay connected!</div>
-  <div class="social-links">
-    <div class="email">
-      <a href="mailto:thehamiltonko@gmail.com"><img src="./images/love-letter-emoji.png" alt="Letter emoji"></a>
-    </div>
-  <div class="linkedin">
-    <a href="https://www.linkedin.com/in/hamilton-ko-7a86672b8/"><img src="./images/linkedin.png" alt="Linkedin logo"></a>
-  </div>
-</div>
-</footer>
+<div id="footer"></div>
+<script src="/components/footer/footer.js"></script>
 </body>
 </html>

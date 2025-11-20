@@ -1,3 +1,36 @@
+.prompt {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 0.75rem;
+}
+
+#features h2 {
+    font-size: 1.5rem;
+}
+
+.image img.team-image {
+    width: 70%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.image img.phone {
+    width: 25%;
+    height: auto;
+    border-radius: 1.65rem;
+}
+
+.phone img {
+    width: 70%;
+    height: auto;
+    border-radius: 1.65rem;
+}
+
+.images-content {
+    flex: 1;
+}
+
 /* Media Queries for smaller screens (mobile) */
 @media (max-width: 768px) {
     nav {

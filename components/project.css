@@ -1,58 +1,40 @@
-@font-face {
-    font-family: "Aesthetic Moment";
-    src: url("./fonts/Aesthetic Moment Italic Personal Used.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    background-color: #FBFAEE;
+    background-color: #f8f6f2;
     font-family: Arial;
 }
-.homepage {
-    max-width: 90px;
-}
 
-/*Page content*/
-.content {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-    font-family: "Arial";
-}
-
+/*Top of page*/
 .top-page {
-    background-color: #A1D1B7;
-    padding: 1.5rem;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    height: 13rem;
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    background-color: #A1D1B7;
+    padding: 5rem;
+    height: 8rem;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 2rem;
 }
 
 .back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
     text-decoration: none;
-    color:black;
+    color: black;
     font-size: 1.4rem;
     align-self: flex-start;
 }
 
 .back-button:hover {
     color: white;
-}
-
-.header-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .project-title {
@@ -63,6 +45,17 @@ body {
 .members {
     font-size: 1.5rem;
     margin: 0 auto;
+    color: rgba(0, 0, 0, 0.665);
+    padding: 1rem;
+    padding-left: 0;
+}
+
+/*Body of page*/
+.content {
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
 .general {
@@ -87,21 +80,21 @@ body {
 }
 
 .doc-link {
-    color:black;
+    color: black;
     font-size: 1.3rem;
 }
 
-.doc-link:hover{
-    color:#5CBBFF;
+.doc-link:hover {
+    color: #5CBBFF;
 }
 
+/*Images*/
 .images-container {
-    display:flex;
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    padding:0;
-    flex-wrap: wrap;
+    padding: 0;
     gap: 2rem;
 }
 
@@ -110,7 +103,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.image {
+    margin-bottom: 1.5rem;
 }
 
 .images-content img,
@@ -121,18 +119,19 @@ body {
 
 .caption {
     padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
     font-size: 1.25rem;
 }
 
+/*Demos/Videos*/
 .video {
     display: flex;
     justify-content: center;
 }
 
 .video video {
-    width: 875px;
+    width: 75%;
     height: auto;
-    outline: 0.15rem solid black;
 }
 
 .video-content {
@@ -155,3 +154,10 @@ body {
 .alt-link {
     font-size: 1.25rem;
 }
+
+/*Figma*/
+.figma {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+ }

@@ -1,12 +1,16 @@
-.images-content img,
 .image img {
-    width: 40rem;
+    width: 70%;
     height: auto;
 }
 
-.figma {
-   display: flex;
-   justify-content: center;
+.image img.report {
+    width: 45%;
+    height: auto;
+}
+
+.images-content img{
+    width: 100%;
+    height: auto;
 }
 
 /* Media Queries for smaller screens (mobile) */
