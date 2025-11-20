@@ -103,6 +103,7 @@ body {
 .card-title {
   font-size: 3.2rem;
   font-family: "Poppins";
+  color: black;
 }
 
 .type {
@@ -114,6 +115,7 @@ body {
 .card-subtitle {
   font-size: 1.25rem;
   padding-top: 4rem;
+  color: black;
 }
 
 @media (max-width: 768px) {
