@@ -124,6 +124,7 @@ body {
   .header-container {
     flex-direction: column;
     text-align: center;
+    align-items: center;
     padding: 2rem;
   }
 
@@ -134,5 +135,38 @@ body {
 
   .header-info {
     width: 100%;
+    align-items: center;
+  }
+
+  .header-name {
+    font-size: 3.5rem;
+  }
+
+  .header-blurb {
+    text-align: center;
+  }
+
+  .header-buttons {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .work-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .case-studies,
+  .gallery {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .card-title {
+    font-size: 2.5rem;
   }
 }
