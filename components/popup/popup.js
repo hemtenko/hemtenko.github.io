@@ -18,9 +18,20 @@ document.addEventListener('DOMContentLoaded', function () {
         document.head.appendChild(link);
       }
 
+      //Popup elements
       const modal = document.getElementById("window");
       const frame = document.getElementById("frame");
+      const designLayout = document.getElementById("design-layout");
+      const post = document.getElementById("post");
+      const postTitle = document.getElementById("post-title");
+      const postDesc = document.getElementById("post-desc");
       const close = document.querySelector(".close");
+
+      function hideAll() {
+        frame.style.display = "none";
+        designLayout.style.display = "none";
+        modal.className = "popup";
+      }
 
       //Document popup
       document.querySelectorAll("a.doc-link").forEach(link => {
@@ -28,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
           e.preventDefault();
           frame.src = this.href;
           modal.style.display = "flex";
-
           document.body.style.overflow = "hidden";
         });
       });
@@ -36,16 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
       //Design popup
       document.querySelectorAll("img.design").forEach(img => {
         img.addEventListener("click", function () {
-          const post = document.getElementById("post");
-          const designLayout = document.getElementById("design-layout");
-          const postTitle = document.getElementById("post-title");
-          const postDesc = document.getElementById("post-desc");
-
-          frame.style.display = "none";
-          post.src = this.src;
+          hideAll();
+          post.src = img.src;
           post.style.display = "block";
           designLayout.style.display = "flex";
-          postTitle.textContent = this.dataset.title || "";
+          postTitle.textContent = img.dataset.title || "";
           postDesc.innerHTML = this.dataset.description || "";
           modal.classList.add("design");
           modal.style.display = "flex";
@@ -55,21 +60,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       //Close popup
       function closePopup() {
-        modal.style.display = "none";
+        hideAll();
         frame.src = "";
-        frame.style.display = "block";
-
-        const post = document.getElementById("post");
-        const designLayout = document.getElementById("design-layout");
-        const postTitle = document.getElementById("post-title");
-        const postDesc = document.getElementById("post-desc");
         post.src = "";
-        post.style.display = "none";
-        designLayout.style.display = "none";
         postTitle.textContent = "";
-        postDesc.innerHTML = "";
-        modal.classList.remove("design");
-
+        modal.style.display = "none";
         document.body.style.overflow = "auto";
       }
 
