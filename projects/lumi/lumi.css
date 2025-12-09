@@ -33,22 +33,20 @@
 
 /* Media Queries for smaller screens (mobile) */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: row; /* Keep the logo on the left */
-        justify-content: space-between;
-        text-align: center;
-        padding: 1rem;
+    .image img.phone,
+    .images-content {
+        width: 60%;
+        height: auto;
     }
 
-     /* Reduce logo size for mobile */
-     .homepage {
-        max-width: 60px; /* Adjust logo size */
-        margin-bottom: 1rem; /* Add margin for spacing */
+    .phone img,
+    .image img.team-image {
+        width: 100%;
+        height: auto;
     }
 
-    .navigation ul {
-        gap: 1rem; /* Add gap between items */
-        font-size: 1.3rem; /* Reduce font size on mobile */
+    .images-container {
+        flex-direction: column;
+        align-items: center;
     }
-
 }
