@@ -15,6 +15,7 @@ EMAIL: hamiltk@uci.edu
   <link rel="stylesheet" href="/css/override.css">
   <link rel="stylesheet" href="/components/fonts.css">
   <link rel="stylesheet" href="/components/project.css">
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" onerror="this.onerror=null;this.href='/components/photoswipe/dist/photoswipe.css';">
   <link rel="stylesheet" href="zara.css">
   <title>Hamilton Ko - Portfolio</title>
 </head>
@@ -63,15 +64,21 @@ EMAIL: hamiltk@uci.edu
 
       <div class="images-container">
         <div class="images-content">
+          <a href="assets/zara-page1.png">
           <img src="assets/zara-page1.png">
+          </a>
           <span class="caption">The navigation text is small and overlaps images</span>
         </div>
         <div class="images-content">
+          <a href="assets/zara-page2.png">
           <img src="assets/zara-page2.png">
+          </a>
           <span class="caption">Image layout is different from previous section</span>
         </div>
         <div class="images-content">
+          <a href="assets/zara-contrast.png">
           <img src="assets/zara-contrast.png">
+          </a>
           <span class="caption">Contrast option doesn't show logo and is difficult to view overall</span>
         </div>
       </div>
@@ -118,6 +125,12 @@ EMAIL: hamiltk@uci.edu
   <!--Contact Section-->
 <div id="footer"></div>
 <script src="/components/footer/footer.js"></script>
+
+<!--Photoswipe-->
+  <script type="module">
+   import {initPhotoswipe} from '/components/photoswipe/photoswipe-loader.js';
+   initPhotoswipe();
+  </script>
 </body>
 
 </html>

@@ -15,6 +15,7 @@ EMAIL: hamiltk@uci.edu
   <link rel="stylesheet" href="/css/override.css">
   <link rel="stylesheet" href="/components/fonts.css">
   <link rel="stylesheet" href="/components/project.css">
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" onerror="this.onerror=null;this.href='/components/photoswipe/dist/photoswipe.css';">
   <link rel="stylesheet" href="medbeats.css">
   <title>Hamilton Ko - Portfolio</title>
 </head>
@@ -59,7 +60,9 @@ EMAIL: hamiltk@uci.edu
       <p class="section-text">The group created a survey to see what transfer students mainly use music for and what kind of emotions that they go through when they are preparing for transfer and/or after they already transfered. These responses were then analyzed to see the commonalities that would make up the main points that we would focus on.
       </p>
       <div class="image">
+        <a href="assets/medbeat-graph.png">
         <img src="assets/medbeat-graph.png" alt="Bar graph showing results from one of the survey questions">
+        </a>
         <span class="caption">Survey Results</span>
       </div>
     </section>
@@ -69,11 +72,15 @@ EMAIL: hamiltk@uci.edu
       <p class="section-text">Once we determined the main ideas that we needed to focus on, we created personas to help better understand the kind of users that we would be encountering.</p>
       <div class="images-container">
         <div class="images-content">
+          <a href="assets/medbeat-persona1.jpg">
           <img src="assets/medbeat-persona1.jpg" alt="User persona of a transfer student named David">
+          </a>
           <span class="caption">User Personas</span>
         </div>
         <div class="images-content">
+          <a href="assets/medbeat-persona2.jpg">
           <img src="assets/medbeat-persona2.jpg" alt="User persona of a upcoming transfer student named Ashley">
+          </a>
           <span class="caption">Another User Personas</span>
         </div>
     </section>
@@ -101,7 +108,9 @@ EMAIL: hamiltk@uci.edu
           <a href="https://medbeats-journey.webflow.io/" class="link" target="_blank">here</a>.
         </p>
         <div class="image">
+          <a href="assets/website-homepage.png">
           <img src="assets/website-homepage.png" alt="Homepage preview of Medbeat website">
+          </a>
         </div>
       </div>
     </section>
@@ -131,6 +140,12 @@ EMAIL: hamiltk@uci.edu
   <!--Contact Section-->
 <div id="footer"></div>
 <script src="/components/footer/footer.js"></script>
+
+<!--Photoswipe-->
+<script type="module">
+ import {initPhotoswipe} from '/components/photoswipe/photoswipe-loader.js';
+ initPhotoswipe();
+</script>
 </body>
 
 </html>
