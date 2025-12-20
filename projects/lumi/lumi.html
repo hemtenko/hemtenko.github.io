@@ -15,6 +15,7 @@ EMAIL: hamiltk@uci.edu
   <link rel="stylesheet" href="/css/override.css">
   <link rel="stylesheet" href="/components/fonts.css">
   <link rel="stylesheet" href="/components/project.css">
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" onerror="this.onerror=null;this.href='/components/photoswipe/dist/photoswipe.css';">
   <link rel="stylesheet" href="lumi.css">
   <title>Hamilton Ko - Portfolio</title>
 </head>
@@ -70,7 +71,9 @@ EMAIL: hamiltk@uci.edu
       <p class="section-text">
         The heat map showcases a map of the current location of the user and uses different colors to indicate whether the user to close to or getting closer to an area that is known to have dangerous activity going on. This is based on user submissions. The map also includes a search feature that allows the user to find the closest safe zone and navigate them to it.</p>
         <div class="image">
+          <a href="assets/heatmap.png">
           <img src="assets/heatmap.png" class="phone" alt="Heat map feature">
+          </a>
         </div>
       <h2><b><u>Emergency Contacts</u></b></h2>
       <p class="section-text">
@@ -78,7 +81,9 @@ EMAIL: hamiltk@uci.edu
         they are in danger to spend less time going through the steps of dialing emergency services, a friend, or family member.
       </p>
       <div class="image">
+        <a href="assets/emergency contacts.png">
         <img src="assets/emergency contacts.png" class="phone" alt="List of emergency contacts">
+        </a>
       </div>
       <h2><b><u>Virtual Check-in</u></b></h2>
       <p class="section-text">
@@ -86,15 +91,21 @@ EMAIL: hamiltk@uci.edu
       </p>
       <div class="images-container">
         <div class="images-content phone">
+          <a href="assets/checkin.png">
           <img src="assets/checkin.png" alt="Checkin screen">
+          </a>
           <span class="caption">What the user sees when sending a check-in</span>
         </div>
         <div class="images-content phone">
+          <a href="assets/checkin-text.png">
           <img src="assets/checkin-text.png" alt="Checkin recipient text message">
+          </a>
           <span class="caption">How the recipient receives the text</span>
         </div>
         <div class="images-content phone">
+          <a href="assets/checkin-web.png">
           <img src="assets/checkin-web.png" alt="Checkin recipient web page">
+          </a>
           <span class="caption">What the recipient sees after clicking the link</span>
         </div>
       </div>
@@ -126,7 +137,9 @@ EMAIL: hamiltk@uci.edu
     <section id="team">
       <h3 class="section-title"><b>Demo Day</b></h3>
       <div class="image">
+        <a href="assets/team_lumi.jpg">
         <img src="assets/team_lumi.jpg" class="team-image" alt="Team at demo day">
+        </a>
         <span class="caption">Team Lumi at Demo Day</span>
       </div>
     </section>
@@ -135,6 +148,12 @@ EMAIL: hamiltk@uci.edu
   <!--Contact Section-->
   <div id="footer"></div>
   <script src="/components/footer/footer.js"></script>
+
+  <!--Photoswipe-->
+  <script type="module">
+   import {initPhotoswipe} from '/components/photoswipe/photoswipe-loader.js';
+   initPhotoswipe();
+  </script>
 </body>
 
 </html>

@@ -15,6 +15,7 @@ EMAIL: hamiltk@uci.edu
   <link rel="stylesheet" href="/css/override.css">
   <link rel="stylesheet" href="/components/fonts.css">
   <link rel="stylesheet" href="/components/project.css">
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" onerror="this.onerror=null;this.href='/components/photoswipe/dist/photoswipe.css';">
   <link rel="stylesheet" href="goshsha.css">
   <title>Hamilton Ko - Portfolio</title>
 </head>
@@ -65,11 +66,15 @@ EMAIL: hamiltk@uci.edu
       </p>
       <div class="images-container">
         <div class="images-content">
+          <a href="assets/ai idea.jpg">
           <img src="assets/ai idea.jpg" alt="AI assistant idea">
+          </a>
           <span class="caption">AI assistant idea</span>
         </div>
         <div class="images-content">
+          <a href="assets/pet idea.jpg">
           <img src="assets/pet idea.jpg" alt="Virtual pet idea">
+          </a>
           <span class="caption">Virtual pet idea</span>
         </div>
       </div>
@@ -103,14 +108,18 @@ EMAIL: hamiltk@uci.edu
       <p class="section-text">This is the poster that was displayed at the ICS Expo to showcase our work.
       </p>
       <div class="image">
+        <a href="assets/ICS Expo Poster.jpg">
         <img src="assets/ICS Expo Poster.jpg" alt="Poster showcasing work done in relation to Goshsha">
+        </a>
       </div>
     </section>
 
     <section id="team">
       <h3 class="section-title"><b>ICS Expo</b></h3>
       <div class="image">
+        <a href="assets/team goshsha.jpeg">
         <img src="assets/team goshsha.jpeg" class="team-image" alt="Team at the ICS Expo">
+        </a>
         <span class="caption">Team Shap-a-holics at the ICS Expo</span>
       </div>
     </section>
@@ -119,6 +128,12 @@ EMAIL: hamiltk@uci.edu
   <!--Contact Section-->
  <div id="footer"></div>
  <script src="/components/footer/footer.js"></script>
+
+ <!--Photoswipe-->
+ <script type="module">
+  import {initPhotoswipe} from '/components/photoswipe/photoswipe-loader.js';
+  initPhotoswipe();
+ </script>
 </body>
 
 </html>
