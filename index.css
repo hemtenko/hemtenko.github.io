@@ -84,7 +84,6 @@ body {
 .work-cards .work-card {
   text-decoration: none;
   border-radius: 2rem;
-  transition: 0.5s;
 }
 
 .case-studies,

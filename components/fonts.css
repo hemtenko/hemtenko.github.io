@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Aesthetic Moment";
-    src: url(/fonts/Aesthetic\ Moment\ \ Italic\ Personal\ Used.ttf) format("truetype");
+    src: url(/fonts/AestheticMoment-Italic.ttf) format("truetype");
     font-weight: 400;
     font-style: italic;
 }
@@ -28,7 +28,7 @@
 
 @font-face {
     font-family: "Instagram Sans";
-    src: url(/fonts/Instagram\ Sans.ttf) format("truetype");
+    src: url(/fonts/InstagramSans.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
