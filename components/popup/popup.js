@@ -75,5 +75,14 @@ document.addEventListener('DOMContentLoaded', function () {
           closePopup();
         }
       };
+
+      //Open popup from URL hash
+      const hash = window.location.hash.slice(1);
+      if (hash) {
+        const target = document.querySelector(`img.design[src*="${hash}"]`);
+        if (target) {
+          target.click();
+        }
+      }
     })
 });
