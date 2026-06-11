@@ -4,8 +4,17 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    background-color: #FBFAEE;
+    background-color: #f8f6f2;
     font-family: Arial;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('./images/paper-texture.jpg');
+    opacity: 0.50;
+    z-index: -1;
 }
 
 /*Introduction section*/
@@ -14,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    background-color: #A589D1;
+    background-color: #62B0F9;
     padding: 4vw 4vw;
     flex-wrap: wrap;
 }
@@ -143,7 +152,6 @@ body {
 
 .covers a:hover .thumbnail {
     transform: scale(1.025);
-    outline: 0.4rem solid #BCA7DD;
     outline-offset: 0;
 }
 
