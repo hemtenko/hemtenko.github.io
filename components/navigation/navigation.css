@@ -6,15 +6,14 @@
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: right;
     padding: 1rem 1.75rem;
-    position: fixed;
     width: 100%;
 }
 
 .homepage {
-    max-width: 90px;
+    max-width: 3rem;
 }
 
 #menu-toggle {
@@ -35,10 +34,6 @@ nav {
     display: flex;
     margin: 0;
     gap: 1.5rem;
-    background: rgba(162, 162, 162, 0.175);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 2rem;
     padding: 0.5rem 1.5rem;
 }
 
@@ -46,19 +41,11 @@ nav {
 .navigation li a {
     text-decoration: none;
     color: black;
-    font-size: 1.75rem;
-}
-
-.navigation li.dropdown {
-    position: relative;
+    font-size: 2rem;
 }
 
 .navigation li a:hover {
     color: #5199FF;
-}
-
-.navigation li a>.dropdown {
-    border-radius: 1rem;
 }
 
 /*.navigation ul li:nth-child(1) a:hover {
@@ -70,33 +57,6 @@ nav {
 .navigation ul li:nth-child(3) a:hover {
     color:#C55E59;
 }*/
-
-/*Dropdown menu*/
-.dropdown>.dropdown-menu {
-    display: none;
-    position: absolute;
-    white-space: nowrap;
-    padding: 0.75rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    z-index: 1001;
-    min-width: max-content;
-    width: auto;
-}
-
-.dropdown:hover>.dropdown-menu {
-    display: block;
-}
-
-.navigation li.dropdown>.dropdown-menu {
-    border-radius: 1rem;
-    min-width: 100%;
-    margin-left: -.25rem;
-}
-
-.navigation li.dropdown>.dropdown-menu li a {
-    font-size: 1.35rem;
-}
 
 /*Mobile*/
 @media (max-width: 768px) {
